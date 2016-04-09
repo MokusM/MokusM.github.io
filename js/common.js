@@ -21,7 +21,7 @@ $(function() {
 		offset : "40%"
 	});
 
-	$("#resume .item_l").animated("fadeInLeft");
+	$("#resume ").animated("fadeInLeft");
 	$("#resume .item_c").animated("zoomIn");
 	$("#resume .item_r").animated("fadeInRight");
 	
@@ -51,11 +51,11 @@ $(function() {
 
 	//E-mail Ajax Send
 	//Documentation & Example: https://github.com/agragregra/uniMail
-	$("form").submit(function() { //Change
+	$(".container form").submit(function() { //Change
 		var th = $(this);
 		$.ajax({
 			type: "POST",
-			url: "mail.php", //Change
+			url: "../mail.php", //Change
 			data: th.serialize()
 		}).done(function() {
 			alert("Thank you!");
