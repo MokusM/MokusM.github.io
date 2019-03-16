@@ -23,13 +23,13 @@
 		<div id="fullpage">
 			<div class="section section-main"  data-anchor='main'>
 				<!-- <div class="main-video-bg">
-						<video playsinline loop autoplay muted><source src="img/raek_color_2.mp4" type="video/mp4"></video>
+					<video playsinline loop data-autoplay muted>
+						<source src="img/offise_work.mp4" type="video/mp4">
+					</video>
 				</div> -->
 				<div class="section-bg"></div>
 				<div class="wrapper">
 						<h1>Привіт!</h1>
-							
-						
 						<p>Мене звати Микола Мойсеєв.<br>Я html-верстальник команди SlicePlanet.</p>
 						<div class="next-slide-wrap">	
 						<a href="#about" class="next-slide">Детальніше</a>	
@@ -254,10 +254,36 @@
 
 <div class="loader">
 	<div class="logo-load">
-		<div class="loader-logo">
+		<!-- <div class="loader-logo">
 		<img src="img/logo.svg" alt="">			
+		</div> -->
+		<div class="loader-logo">
+			<svg x="0px" y="0px"
+			viewBox="0 0 299.5 306.6" >
+			<style type="text/css">
+				g{fill:#fff;}
+			</style>
+			<g>
+				<polygon class="logo-top" points="110.8,90.8 0,1.3 0.1,217.2 30.7,195.3 30.9,65.9 111,130.7 222,41 222,1.3 "/>
+				<polygon class="logo-bottom" points="191.3,105.3 191.1,234.8 111.1,169.9 0,259.7 0,299.3 111.2,209.8 222,299.3 221.9,83.5 "/>
+				<g class="st1">
+					<path d="M238.2,254.5h46.1v1.6h-42.8l29.9,20.5v1l-29.9,20.5h42.8v1.6h-46.1v-1.3l31.1-21.3l-31.1-21.4V254.5z"/>
+					<path d="M237.6,220.4c0-15.9,12.3-23.8,23.7-23.8s23.7,7.8,23.7,23.8c0,15.9-12.3,23.8-23.7,23.8S237.6,236.3,237.6,220.4z
+					M239.1,220.4c0,14.8,11.4,22.1,22.1,22.1s22.1-7.3,22.1-22.1s-11.4-22.1-22.1-22.1S239.1,205.6,239.1,220.4z"/>
+					<path d="M238.2,184.7h46.1v1.6h-46.1V184.7z"/>
+					<path d="M237.6,159.5c0-4.7,1.2-9.6,3.1-13h1.6c-2,3.4-3.2,8.6-3.2,13c0,6.5,2.8,12.8,9.5,12.8c14.5,0,8.6-28.9,25.1-28.9
+					c8.1,0,11.2,7.3,11.1,15.3c0,5.7-1.4,11.4-3.8,15.7h-1.6c2.5-4.5,3.9-10.2,3.9-15.5c0-7.4-2.4-13.8-9.5-13.8
+					c-15.3,0-9.2,28.9-25.2,28.9C240.9,173.9,237.6,166.7,237.6,159.5z"/>
+					<path d="M238.2,103.8h1.6v28.3h20.5v-26.3h1.6v26.3h20.8v-28.9h1.6v30.5h-46.1V103.8z"/>
+					<path d="M238.2,90.8h46.1v1.6h-46.1V90.8z"/>
+					<path d="M238.2,47.1h1.6v28.3h20.5V49h1.6v26.3h20.8V46.5h1.6V77h-46.1V47.1z"/>
+					<path d="M284.3,21.7l-46.1,20.1v-1.8l44.2-19.2L238.2,1.6v-1.7l46.1,20.1V21.7z"/>
+				</g>
+			</g>
+	</svg>
+
+		
 		</div>
-		<canvas id="logo" width="80" height="82"></canvas>
 
 	</div>
 </div>	
@@ -274,41 +300,51 @@
 	<script src="js/components/jquery.mCustomScrollbar.js" ></script>
 	-->
 	<script src="js/custom.js" ></script>
-	<script>
+	
+	
+	<!-- <script>
 		var canvas = document.getElementById('logo');
 		var ctx = canvas.getContext('2d');
-
+	
 		var theString = "MOISEIEV";
 		var radian = (Math.PI/180);
 		ctx.strokeStyle = "white";
 		ctx.lineWidth = "8";
-
+	
 		ctx.beginPath();
-		ctx.moveTo(3, 56);
-		ctx.lineTo(3,0);
-		ctx.lineTo(30,30);
-		ctx.lineTo(60,0);
-		//ctx.lineCap = "square";
+		ctx.moveTo(4, 56);
+		ctx.lineTo(4,8);
+		ctx.lineTo(30,29);
+		ctx.lineTo(60,0);		
+		ctx.lineJoin = "miter";
+		ctx.lineCap = "square";
 		ctx.stroke();
 		ctx.closePath();
-
+	
 		ctx.beginPath();
 		ctx.moveTo(60, 16);
 		ctx.lineTo(60,80);
 		ctx.lineTo(30,50);
 		ctx.lineTo(0,80);
+		ctx.lineJoin = "miter";
 		//ctx.lineCap = "square";
 		ctx.stroke();
 		ctx.closePath();
-
+	
+		ctx.beginPath();
+		ctx.moveTo(4,50);
+		ctx.lineTo(60,35);
+		ctx.closePath();
+		ctx.clip();
+	
 		ctx.font = "15 Muller Thin";
 		ctx.fillStyle = "#fff";
 		ctx.translate(ctx.canvas.width/2,ctx.canvas.height/2);
 		ctx.rotate(0.5);
 		ctx.fillText(theString, 20, 20);
-
-
+	
+	
 		
-	</script>
+	</script> -->
 </body>
 </html>
