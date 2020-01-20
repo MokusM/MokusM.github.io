@@ -1,0 +1,33 @@
+@font-face {
+	font-family: 'Akrobat';
+	src: url('../fonts/Akrobat_Light/Akrobat_Light.eot');
+	src: url('../fonts/Akrobat_Light/Akrobat_Light.eot') format('embedded-opentype'),
+	url('../fonts/Akrobat_Light/Akrobat_Light.woff2') format('woff2'),
+	url('../fonts/Akrobat_Light/Akrobat_Light.woff') format('woff'),
+	url('../fonts/Akrobat_Light/Akrobat_Light.ttf') format('truetype'),
+	url('../fonts/Akrobat_Light/Akrobat_Light.svg#Akrobat_Light') format('svg');
+	font-weight: 300;
+}
+@font-face {
+    font-family: 'Helios';
+    src: url('../fonts/HeliosCondBlackItalic/HeliosCondBlackItalic.eot');
+    src: url('../fonts/HeliosCondBlackItalic/HeliosCondBlackItalic.eot') format('embedded-opentype'),
+         url('../fonts/HeliosCondBlackItalic/HeliosCondBlackItalic.woff2') format('woff2'),
+         url('../fonts/HeliosCondBlackItalic/HeliosCondBlackItalic.woff') format('woff'),
+         url('../fonts/HeliosCondBlackItalic/HeliosCondBlackItalic.ttf') format('truetype'),
+         url('../fonts/HeliosCondBlackItalic/HeliosCondBlackItalic.svg#HeliosCondBlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Helios';
+    src: url('../fonts/HeliosCondBoldItalic/HeliosCondBlackItalic.eot');
+    src: url('../fonts/HeliosCondBoldItalic/HeliosCondBlackItalic.woff') format('woff'),
+    url('../fonts/HeliosCondBoldItalic/HeliosCondBlackItalic.ttf') format('truetype'),
+    url('../fonts/HeliosCondBoldItalic/HeliosCondBlackItalic.svg') format('svg');
+    font-weight: 700;
+    font-style: italic;
+}
+
