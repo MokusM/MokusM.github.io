@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+        <title>mudvex - Contacts</title>
+        <meta name='description' content="" />
+        <meta name="keywords" content="" />
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <style>
+            .main-wrapper { opacity:0; }
+            .load .main-wrapper { opacity:1; }
+            .loaded-screen { position: fixed;left: -100%;top: 0;width: 100%;height: 100%;background-color: #E7E8E9;z-index: 150;transition: all 0.5s;}
+            .loaded .screen-show { left: 0; }
+            .screen-close{left: auto;right: -100%;}
+            .close-page .screen-close{ right: 0; }
+        </style>
+    </head>
+    <body class="loaded contacts-page">
+        <!-- BEGIN BODY -->
+        <div class="main-wrapper">
+            <!-- BEGIN CONTENT -->
+            <div class="fullscreen-bg">
+                <video loop muted autoplay class="fullscreen-bg__video" poster="img/contants-bg.jpg">
+                    <source src="video/contacts.mp4" type="video/mp4">
+                </video>
+            </div>
+            <main class="content content-contacts">
+                <div class="wrapper wrapper-time">
+                    <div class="time js-time"></div>
+                    <ul class="time-list">
+                        <li class="time-list__item"><span>Departure:</span> 10 a.m.</li>
+                        <li class="time-list__item"><span>Arrival:</span> 8 p.m.</li>
+                    </ul>
+                </div>
+            </main>
+            <!-- CONTENT EOF   -->
+            <!-- BEGIN HEADER -->
+            <header class="header-inner header-fixed">
+                <div class="wrapper">
+                    <div class="header-row">
+                        <a href="#" class="logo">
+                            <img src="img/logo.svg" class="logo-black" alt="">
+                            <img src="img/logo-white.svg"  class="logo-white"  alt="">
+                        </a>
+                        <a href="#" class="button-nav show-sm-mob js-button-nav">
+                        <span></span>
+                        <span></span>
+                        </a>
+                        <div class="active-page">Contacts</div>
+                        <nav class="main-nav">
+                            <ul class="main-nav-list">
+                                <li class="show-sm-mob active"><a href="#">Contacts</a></li>
+                                <li><a href="#">Projects</a></li>
+                                <li><a href="#">About me</a></li>
+                            </ul>
+                            <ul class="social-list show-sm-mob">
+                                <li class="social-list__item">
+                                    <a href="#" class="social-list__link">behance</a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a href="#" class="social-list__link">Instagram</a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a href="#" class="social-list__link">facebook</a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a href="#" class="social-list__link">telegram</a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a href="#" class="social-list__link">gmail</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn btn-black show-sm-mob">Say Hello</a>
+                        </nav>
+                        <div class="progress">
+                            <div class="progress-container">
+                                <div class="progress-bar" id="pBar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="nav-tab-list">
+                        <li class="nav-tab-list__item">
+                            <a href="#" class="nav-tab-list__link">Saint-Petersburg</a>
+                        </li>
+                        <li class="nav-tab-list__item active">
+                            <a href="#" class="nav-tab-list__link">Berlin</a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+            <!-- HEADER EOF   --> 
+            <!-- BEGIN FOOTER --> 
+            <footer class="project-list-footer">
+                <div class="wrapper">
+                    <div class="footer-row">
+                        <ul class="social-list">
+                            <li class="social-list__item">
+                                <a href="#" class="social-list__link">behance</a>
+                            </li>
+                            <li class="social-list__item">
+                                <a href="#" class="social-list__link">Instagram</a>
+                            </li>
+                            <li class="social-list__item">
+                                <a href="#" class="social-list__link">facebook</a>
+                            </li>
+                            <li class="social-list__item">
+                                <a href="#" class="social-list__link">telegram</a>
+                            </li>
+                            <li class="social-list__item">
+                                <a href="#" class="social-list__link">gmail</a>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-yellow">Say Hello</a>
+                    </div>
+                </div>
+            </footer>
+            <!-- FOOTER EOF   -->
+            <div class="custom-cursor">
+                <svg viewBox="0 0 24 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Artboard-Copy-16" transform="translate(-146.000000, -319.000000)">
+                        <path d="M146,329.9 L164.761314,329.9 C164.816543,329.9 164.861314,329.944772 164.861314,330 C164.861314,330.026241 164.851,330.051431 164.832595,330.070136 L159,335.997887 L161.004329,338 L170,328.5 L161.004329,319 L159,320.996248 L164.832789,326.929898 C164.871506,326.969284 164.870963,327.032598 164.831577,327.071314 C164.812875,327.089698 164.7877,327.1 164.761475,327.1 L146,327.1 L146,329.9 Z" id="Path-17-Copy"></path>
+                    </g>
+                </svg>
+            </div>
+        </div>
+        <div class="loaded-screen screen-close"></div>
+        <div class="loaded-screen screen-show"></div>
+        <!-- BODY EOF   -->
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <script src="js/jquery-3.0.0.min.js"></script>    
+        <script src="js/jquery-migrate-1.4.1.min.js" ></script>
+        <script src="js/components/TweenMax.min.js"></script>
+        <script src="js/custom.js" ></script>
+    </body>
+</html>
