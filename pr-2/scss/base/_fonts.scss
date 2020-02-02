@@ -1,0 +1,125 @@
+@font-face {
+	font-family: 'TTCommons';
+	src: url('../fonts/TTCommons-Regular/TTCommons-Regular.eot');
+	src: url('../fonts/TTCommons-Regular/TTCommons-Regular.woff') format('woff'),
+		url('../fonts/TTCommons-Regular/TTCommons-Regular.ttf') format('truetype'),
+		url('../fonts/TTCommons-Regular/TTCommons-Regular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TTCommons';
+	src: url('../fonts/TTCommons-ExtraBold/TTCommons-ExtraBold.eot');
+	src: url('../fonts/TTCommons-ExtraBold/TTCommons-ExtraBold.woff') format('woff'),
+		url('../fonts/TTCommons-ExtraBold/TTCommons-ExtraBold.ttf') format('truetype'),
+		url('../fonts/TTCommons-ExtraBold/TTCommons-ExtraBold.svg') format('svg');
+	font-weight: 800;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'TTCommons';
+	src: url('../fonts/TTCommons-DemiBold/TTCommons-DemiBold.eot');
+	src: url('../fonts/TTCommons-DemiBold/TTCommons-DemiBold.woff') format('woff'),
+		url('../fonts/TTCommons-DemiBold/TTCommons-DemiBold.ttf') format('truetype'),
+		url('../fonts/TTCommons-DemiBold/TTCommons-DemiBold.svg') format('svg');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TTCommons';
+	src: url('../fonts/TTCommons-Thin/TTCommons-Thin.eot');
+	src: url('../fonts/TTCommons-Thin/TTCommons-Thin.woff') format('woff'),
+		url('../fonts/TTCommons-Thin/TTCommons-Thin.ttf') format('truetype'),
+		url('../fonts/TTCommons-Thin/TTCommons-Thin.svg') format('svg');
+	font-weight: 200;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'TTCommons';
+	src: url('../fonts/TTCommons-Medium/TTCommons-Medium.eot');
+	src: url('../fonts/TTCommons-Medium/TTCommons-Medium.woff') format('woff'),
+	url('../fonts/TTCommons-Medium/TTCommons-Medium.ttf') format('truetype'),
+	url('../fonts/TTCommons-Medium/TTCommons-Medium.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+
+
+@font-face {
+	font-family: 'BantoDemo';
+	src: url('../fonts/BantoDemo-Medium/BantoDemo-Medium.eot');
+	src: url('../fonts/BantoDemo-Medium/BantoDemo-Medium.woff') format('woff'),
+		url('../fonts/BantoDemo-Medium/BantoDemo-Medium.ttf') format('truetype'),
+		url('../fonts/BantoDemo-Medium/BantoDemo-Medium.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'BantoDemo';
+	src: url('../fonts/BantoDemo-Light/BantoDemo-Light.eot');
+	src: url('../fonts/BantoDemo-Light/BantoDemo-Light.woff') format('woff'),
+		url('../fonts/BantoDemo-Light/BantoDemo-Light.ttf') format('truetype'),
+		url('../fonts/BantoDemo-Light/BantoDemo-Light.svg') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'TTCommons';
+	src: url('../fonts/TTCommons-Bold/TTCommons-Bold.eot');
+	src: url('../fonts/TTCommons-Bold/TTCommons-Bold.woff') format('woff'), 
+	url('../fonts/TTCommons-Bold/TTCommons-Bold.ttf') format('truetype'),
+	url('../fonts/TTCommons-Bold/TTCommons-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon/icomoon.eot?c9cbkq');
+  src:  url('../fonts/icomoon/icomoon.eot?c9cbkq#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon/icomoon.ttf?c9cbkq') format('truetype'),
+    url('../fonts/icomoon/icomoon.woff?c9cbkq') format('woff'),
+    url('../fonts/icomoon/icomoon.svg?c9cbkq#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-view:before {
+  content: "\e903";
+}
+.icon-arr-left:before {
+  content: "\e900";
+}
+.icon-arr-right:before {
+  content: "\e901";
+}
+.icon-arr-top:before {
+  content: "\e902";
+}
+

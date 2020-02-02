@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+        <title>mudvex - Проекты списком</title>
+        <meta name='description' content="" />
+        <meta name="keywords" content="" />
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <style>
+            .main-wrapper { opacity:0; }
+            .load .main-wrapper { opacity:1; }
+            .loaded-screen { position: fixed;left: -100%;top: 0;width: 100%;height: 100%;background-color: #101010;z-index: 150;transition: all 0.5s;}
+            .loaded .screen-show { left: 0; }
+            .screen-close{left: auto;right: -100%;}
+            .close-page .screen-close{ right: 0; }
+        </style>
+    </head>
+    <body class="loaded contacts-page">
+        <!-- BEGIN BODY -->
+        <div class="main-wrapper black-page" id="viewport-scroll">
+            <!-- BEGIN CONTENT -->
+            <div class="viewport scroll-container__wrapper" >
+                <div id="scroll-container" class="scroll-container black-page">
+                    <main class="content">
+                        <div class="wrapper">
+                            <div class="projects"  >
+                                <div class="projects__title">all projects</div>
+                                <div class="projects-row">
+                                    <div class="projects-item">
+                                        <div class="projects-item__title">Нейминг</div>
+                                        <ul class="project-list" data-fx="1">
+                                            <li class="project-list__item">
+                                                <a href="#" class="project-list__link" data-img="img/women.jpg">
+                                                    <span class="project-list__text">Buro 222°</span>
+                                                </a>
+                                            </li>
+                                            <li class="project-list__item">
+                                                <a href="#" class="project-list__link" data-img="img/women-2.jpg">
+                                                    <span class="project-list__text">Pobo</span>
+                                                </a>
+                                            </li>
+                                            <li class="project-list__item">
+                                                <a href="#" class="project-list__link" data-img="img/women.jpg">
+                                                    <span class="project-list__text">PuzzleMuzzle</span>
+                                                </a>
+                                            </li>
+                                            <li class="project-list__item">
+                                                <a href="#" class="project-list__link" data-img="img/women-2.jpg">
+                                                    <span class="project-list__text">Brainiqum</span>
+                                                </a>
+                                            </li>
+                                            <li class="project-list__item">
+                                                <a href="#" class="project-list__link" data-img="img/women.jpg">
+                                                    <span class="project-list__text">Lof</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="projects-item">
+                                        <div class="projects-item__title">Арт-дирекшен</div>
+                                        <ul class="project-list" data-fx="1">
+                                            <li class="project-list__item">
+                                                <a href="#" class="project-list__link" data-img="img/women.jpg">
+                                                    <span class="project-list__text">Ibody</span>
+                                                </a>
+                                            </li>
+                                            <li class="project-list__item">
+                                                <a href="#" class="project-list__link" data-img="img/women.jpg">
+                                                    <span class="project-list__text">PetshopDays</span>
+                                                </a>
+                                            </li>
+                                            <li class="project-list__item">
+                                                <a href="#" class="project-list__link" data-img="img/women-2.jpg">
+                                                    <span class="project-list__text">Pets product</span>
+                                                </a>
+                                            </li>
+                                            <li class="project-list__item">
+                                                <a href="#" class="project-list__link" data-img="img/women.jpg">
+                                                    <span class="project-list__text">Nero</span>
+                                                </a>
+                                            </li>
+                                            <li class="project-list__item">
+                                                <a href="#" class="project-list__link" data-img="img/women-2.jpg">
+                                                    <span class="project-list__text">Organix</span>
+                                                </a>
+                                            </li>
+                                            <li class="project-list__item">
+                                                <a href="#" class="project-list__link" data-img="img/women.jpg">
+                                                    <span class="project-list__text">SmartCat/Dog</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="projects-item">
+                                        <div class="projects-item__title">Айдентика</div>
+                                        <ul class="project-list" data-fx="1">
+                                            <li class="project-list__item">
+                                                <a href="#" class="project-list__link" data-img="img/women.jpg">
+                                                    <span class="project-list__text">Айди39</span>
+                                                </a>
+                                            </li>
+                                            <li class="project-list__item">
+                                                <a href="#" class="project-list__link" data-img="img/women.jpg">
+                                                    <span class="project-list__text">Бакора</span>
+                                                </a>
+                                            </li>
+                                            <li class="project-list__item">
+                                                <a href="#" class="project-list__link" data-img="img/women.jpg">
+                                                    <span class="project-list__text">Айди39</span>
+                                                </a>
+                                            </li>
+                                            <li class="project-list__item">
+                                                <a href="#" class="project-list__link" data-img="img/women.jpg">
+                                                    <span class="project-list__text">Бакора</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="projects-item projects-item_mgl">
+                                        <div class="projects-item__title">Брендинг</div>
+                                        <ul class="project-list" data-fx="1">
+                                            <li class="project-list__item">
+                                                <a href="#" class="project-list__link" data-img="img/women.jpg">
+                                                    <span class="project-list__text">ПоБо</span>
+                                                </a>
+                                            </li>
+                                            <li class="project-list__item">
+                                                <a href="#" class="project-list__link" data-img="img/women.jpg">
+                                                    <span class="project-list__text">Глэми</span>
+                                                </a>
+                                            </li>
+                                            <li class="project-list__item">
+                                                <a href="#" class="project-list__link" data-img="img/women.jpg">
+                                                    <span class="project-list__text">Lof</span>
+                                                </a>
+                                            </li>
+                                            <li class="project-list__item">
+                                                <a href="#" class="project-list__link" data-img="img/women.jpg">
+                                                    <span class="project-list__text">PetshopDays</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="projects-item">
+                                        <div class="projects-item__title">Фотографии</div>
+                                        <ul class="project-list" data-fx="1">
+                                            <li class="project-list__item">
+                                                <a href="#" class="project-list__link" data-img="img/women.jpg">
+                                                    <span class="project-list__text">Ibody</span>
+                                                </a>
+                                            </li>
+                                            <li class="project-list__item">
+                                                <a href="#" class="project-list__link" data-img="img/women.jpg">
+                                                    <span class="project-list__text">PetshopDays</span>
+                                                </a>
+                                            </li>
+                                            <li class="project-list__item">
+                                                <a href="#" class="project-list__link" data-img="img/women.jpg">
+                                                    <span class="project-list__text">Pets product</span>
+                                                </a>
+                                            </li>
+                                            <li class="project-list__item">
+                                                <a href="#" class="project-list__link" data-img="img/women.jpg">
+                                                    <span class="project-list__text">Nero</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="projects-item">
+                                        <div class="projects-item__title">Логотипы</div>
+                                        <ul class="project-list" data-fx="1">
+                                            <li class="project-list__item">
+                                                <a href="#" class="project-list__link" data-img="img/card-1.png">
+                                                    <span class="project-list__text">Знаки</span>
+                                                </a>
+                                            </li>
+                                            <li class="project-list__item">
+                                                <a href="#" class="project-list__link" data-img="img/women.jpg">
+                                                    <span class="project-list__text">Знак+Шрифт</span>
+                                                </a>
+                                            </li>
+                                            <li class="project-list__item">
+                                                <a href="#" class="project-list__link" data-img="img/women.jpg">
+                                                    <span class="project-list__text">MaxBionic</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </main>
+                    <!-- CONTENT EOF   -->
+                    <!-- BEGIN FOOTER -->   
+                    <footer class="project-list-footer">
+                        <div class="wrapper">
+                            <div class="footer-row">
+                                <ul class="social-list">
+                                    <li class="social-list__item">
+                                        <a href="#" class="social-list__link">behance</a>
+                                    </li> 
+                                    <li class="social-list__item">
+                                        <a href="#" class="social-list__link">Instagram</a>
+                                    </li> 
+                                    <li class="social-list__item">
+                                        <a href="#" class="social-list__link">facebook</a>
+                                    </li> 
+                                    <li class="social-list__item">
+                                        <a href="#" class="social-list__link">telegram</a>
+                                    </li> 
+                                    <li class="social-list__item">
+                                        <a href="#" class="social-list__link">gmail</a>
+                                    </li>   
+                                </ul>
+                                <a href="#" class="btn btn-yellow">Say Hello</a>
+                            </div>
+                        </div>
+                    </footer>
+                    <!-- FOOTER EOF   -->
+                </div>
+                <!-- BEGIN HEADER -->
+                <header class="header-inner header-fixed">
+                    <div class="wrapper">                    
+                        <div class="header-row">
+                            <a href="#" class="logo"><img src="img/logo-white.svg" alt=""></a>
+                            <a href="#" class="button-nav show-sm-mob js-button-nav">
+                                <span></span>
+                                <span></span>
+                            </a>
+                            <div class="active-page">Projects</div>
+                            <nav class="main-nav main-nav-inner">
+                               <ul class="main-nav-list">
+                                    <li class="show-sm-mob active"><a href="#">Projects</a></li>
+                                    <li><a href="#">About me</a></li>
+                                    <li><a href="#">Contacts</a></li>
+                               </ul>
+                               <ul class="social-list show-sm-mob">
+                                    <li class="social-list__item">
+                                        <a href="#" class="social-list__link">behance</a>
+                                    </li> 
+                                    <li class="social-list__item">
+                                        <a href="#" class="social-list__link">Instagram</a>
+                                    </li> 
+                                    <li class="social-list__item">
+                                        <a href="#" class="social-list__link">facebook</a>
+                                    </li> 
+                                    <li class="social-list__item">
+                                        <a href="#" class="social-list__link">telegram</a>
+                                    </li> 
+                                    <li class="social-list__item">
+                                        <a href="#" class="social-list__link">gmail</a>
+                                    </li>   
+                                </ul>
+                               <a href="#" class="btn btn-black show-sm-mob">Say Hello</a>
+                            </nav>
+                            <div class="progress">
+                                <div class="progress-container">
+                                    <div class="progress-bar" id="pBar"></div>
+                                </div>  
+                            </div>
+                        </div>
+                        <ul class="nav-tab-list">
+                            <li class="nav-tab-list__item">
+                                <a href="#" class="nav-tab-list__link">graphic</a>
+                            </li>
+                            <li class="nav-tab-list__item active">
+                                <a href="#" class="nav-tab-list__link">list</a>
+                            </li>
+                        </ul>
+                    </div>
+                </header>
+                <!-- HEADER EOF   -->	
+                
+                <div class="custom-cursor">
+                    <svg viewBox="0 0 24 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Artboard-Copy-16" transform="translate(-146.000000, -319.000000)">
+                            <path d="M146,329.9 L164.761314,329.9 C164.816543,329.9 164.861314,329.944772 164.861314,330 C164.861314,330.026241 164.851,330.051431 164.832595,330.070136 L159,335.997887 L161.004329,338 L170,328.5 L161.004329,319 L159,320.996248 L164.832789,326.929898 C164.871506,326.969284 164.870963,327.032598 164.831577,327.071314 C164.812875,327.089698 164.7877,327.1 164.761475,327.1 L146,327.1 L146,329.9 Z" id="Path-17-Copy"></path>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="loaded-screen screen-close"></div>
+        <div class="loaded-screen screen-show"></div>
+        <!-- BODY EOF   -->
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <script src="js/jquery-3.0.0.min.js"></script>		
+        <script src="js/jquery-migrate-1.4.1.min.js" ></script>
+        <script src="js/components/TweenMax.min.js"></script>
+        <script src="js/components/hover-img.js"></script>
+        <script src="js/components/smooth-scroll.js"></script>
+        <script src="js/custom.js" ></script>
+    </body>
+</html>

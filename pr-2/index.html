@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+        <title>mudvex - Главная</title>
+        <meta name='description' content="" />
+        <meta name="keywords" content="" />
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <style>
+            .main-wrapper { opacity:0; }
+            .load .main-wrapper { opacity:1; }
+            .loaded-screen { position: fixed;left: -100%;top: 0;width: 100%;height: 100%;background-color: #FFDC00;z-index: 150;transition: all 0.5s;}
+            .loaded .screen-show { left: 0; }
+            .screen-close{left: auto;right: -100%;}
+            .close-page .screen-close{ right: 0; }
+        </style>
+    </head>
+    <body class="loaded">
+        <!-- BEGIN BODY -->       
+        <div class="main-wrapper " id="viewport-scroll">
+            <!-- BEGIN CONTENT -->
+            <div class="viewport scroll-container__wrapper" >
+                <div id="scroll-container" class="scroll-container yellow-page scroll-container_full-height">
+                    <!-- BEGIN CONTENT -->
+                    <main class="content content-main-page">
+                        <div class="main-screen">
+                            <div class="wrapper">
+                                <div class="main-screen__row">
+                                    <h1>Hello and welcome!</h1>
+                                    <p>My name is Sonya and I’m an art-director. There is my station. Please, take your ticker and don’t forget to validate it. Have a nice trip!</p>
+                                    <div class="main-screen__img">
+                                        <img src="img/main-screen.png" alt="">
+                                        <div class="main-screen__ticket-hidden">
+                                            <div class="main-screen__ticket">
+                                                <div class="main-screen__ticket-title">
+                                                    <span>21:45</span>
+                                                    <span>16 SEP 19</span>
+                                                    <span class="ticket-town">KIEV</span>
+                                                </div>
+                                                <img src="img/ticket-2.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main-screen-hold">
+                                        <div id="hold-scale" class="main-screen-hold__track"></div>
+                                        <div class="main-screen-hold__circle"></div>
+                                        <div class="main-screen-hold__title">hold and move</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                    <!-- CONTENT EOF   -->
+                    <!-- BEGIN FOOTER --> 
+                    <footer class="padding-tablet hide-sm-mob">
+                        <div class="wrapper">
+                            <ul class="social-list">
+                                <li class="social-list__item">
+                                    <a href="#" class="social-list__link">behance</a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a href="#" class="social-list__link">Instagram</a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a href="#" class="social-list__link">facebook</a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a href="#" class="social-list__link">telegram</a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a href="#" class="social-list__link">gmail</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </footer>
+                    <!-- FOOTER EOF   -->
+                </div>
+                <!-- BEGIN HEADER -->
+                <header class="header-fixed">
+                    <div class="wrapper">
+                        <div class="header-row">
+                            <a href="#" class="logo"><img src="img/logo.svg" alt=""></a>
+                            <a href="#" class="button-nav show-sm-mob js-button-nav">
+                            <span></span>
+                            <span></span>
+                            </a>
+                            <nav class="main-nav">
+                                <ul class="main-nav-list">
+                                    <li><a href="project-list.html" class="js-anim-page">Projects</a></li>
+                                    <li><a href="about.html" class="js-anim-page">About me</a></li>
+                                    <li><a href="contacts.html" class="js-anim-page">Contacts</a></li>
+                                </ul>
+                                <ul class="social-list show-sm-mob">
+                                    <li class="social-list__item">
+                                        <a href="#" class="social-list__link">behance</a>
+                                    </li>
+                                    <li class="social-list__item">
+                                        <a href="#" class="social-list__link">Instagram</a>
+                                    </li>
+                                    <li class="social-list__item">
+                                        <a href="#" class="social-list__link">facebook</a>
+                                    </li>
+                                    <li class="social-list__item">
+                                        <a href="#" class="social-list__link">telegram</a>
+                                    </li>
+                                    <li class="social-list__item">
+                                        <a href="#" class="social-list__link">gmail</a>
+                                    </li>
+                                </ul>
+                                <a href="#" class="btn btn-black show-sm-mob">Say Hello</a>
+                            </nav>
+                            <div class="progress">
+                                <div class="progress-container">
+                                    <div class="progress-bar" id="pBar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <!-- HEADER EOF   --> 
+                <!-- SCREEN WITH PAGE BEGIN -->
+                <div class="ticket-page">
+                    <div class="ticket-page__img">
+                        <div class="main-screen__ticket-title">
+                            <span>21:45</span>
+                            <span>16 SEP 19</span>
+                            <span class="ticket-town">KIEV</span>
+                        </div>
+                        <img src="img/ticket-2.jpg" alt="">
+                    </div>
+                </div>
+                <!-- SCREEN WITH PAGE EOF -->
+                <div class="custom-cursor">
+                    <svg viewBox="0 0 24 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Artboard-Copy-16" transform="translate(-146.000000, -319.000000)">
+                            <path d="M146,329.9 L164.761314,329.9 C164.816543,329.9 164.861314,329.944772 164.861314,330 C164.861314,330.026241 164.851,330.051431 164.832595,330.070136 L159,335.997887 L161.004329,338 L170,328.5 L161.004329,319 L159,320.996248 L164.832789,326.929898 C164.871506,326.969284 164.870963,327.032598 164.831577,327.071314 C164.812875,327.089698 164.7877,327.1 164.761475,327.1 L146,327.1 L146,329.9 Z" id="Path-17-Copy"></path>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="loaded-screen screen-close"></div>
+        <div class="loaded-screen screen-show"></div>
+        <!-- BODY EOF   -->
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <script src="js/jquery-3.0.0.min.js"></script>    
+        <script src="js/jquery-migrate-1.4.1.min.js" ></script>
+        <script src="js/components/jquery-ui.js"></script>
+        <script src="js/components/jquery.ui.touch-punch.min.js"></script>
+        <script src="js/components/TweenMax.min.js"></script>
+        <script src="js/components/smooth-scroll.js"></script>
+        <script src="js/custom.js" ></script>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+
+/*
+================================================================================
+|                                     FOOTER                                   |
+================================================================================
+*/
+footer{
+	background: #6DA1D7;
+	text-align:left;
+	width:100%;
+	min-width: $min-width;
+	order: 3;	
+    -webkit-order: 3;	
+    padding: 40px 0 220px;
+}
+.copyright{
+	color: #FFFFFF;
+	font-family: $title-font-family;
+	font-style: italic;
+	font-weight: 900;
+	text-transform: uppercase;
+	font-size: 21px;
+	line-height: 25px;
+}
+
+
+@media screen and (max-width: 767px) {
+	footer{
+		padding: 20px 0 92px;
+	}
+	.copyright{
+		font-size: 16px;
+		line-height: 19px;
+	}
+}
