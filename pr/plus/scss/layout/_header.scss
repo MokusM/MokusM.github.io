@@ -1,0 +1,160 @@
+/*
+================================================================================
+|                                     HEADER                                   |
+================================================================================
+*/
+header {
+	width: 100%;
+	min-width: $min-width;
+	text-align: left;
+	order: 1;
+	-webkit-order: 1;
+	padding: 67px 0 20px;
+	.wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+.lang-select {
+	width: 70px;
+	height: 37px;
+	background: #0c0c0d;
+	border-radius: 2px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	padding-right: 18px;
+	transition: all 0s;
+	i {
+		color: #868686;
+		position: absolute;
+		right: 18px;
+		top: 15px;
+		font-size: 8px;
+		transition: all 0.3s;
+	}
+	img {
+		width: 17px;
+	}
+}
+.list-lang {
+	position: absolute;
+	left: 0;
+	top: 100%;
+	display: none;
+	list-style: none;
+	background: #1f2023;
+	border-radius: 0 0 2px 2px;
+	&__item {
+		&.active {
+			background: #2b2c30;
+		}
+		&.active {
+			display: block;
+		}
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 70px;
+		height: 37px;
+		padding-right: 18px;
+		img {
+			width: 16px;
+		}
+	}
+}
+.box-lang {
+	position: relative;
+	margin-right: 8px;
+	margin-left: auto;
+	width: 70px;
+	height: 37px;
+	background: #0c0c0d;
+	border-radius: 2px;
+	&.active {
+		background: #1f2023;
+		border-radius: 2px;
+		.lang-select {
+			background: #1f2023;
+			i {
+				transform: scale(1, -1);
+			}
+		}
+		.list-lang {
+			display: block;
+		}
+	}
+}
+.theme-change {
+	display: flex;
+	&__item {
+		background: #0c0c0d;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 40px;
+		height: 37px;
+		color: #444545;
+		border-bottom: 1px solid #060707;
+		font-size: 15px;
+		&.active {
+			color: #fff;
+			border-bottom: 1px solid #fff;
+		}
+		&:hover {
+			color: #fff;
+		}
+	}
+}
+@keyframes rotatePlus {
+		100% {
+		transform: rotate(360deg);
+	}
+}
+@keyframes rotatePlusLogo {
+	0%{
+		transform: rotate(00deg);	
+	}
+	90%{
+		transform: rotate(00deg);	
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+.plus-logo {
+	position: relative;
+	transform-origin: 9px 21px;
+	animation: rotatePlusLogo 15s ease-in-out  infinite;
+}
+.logo {
+	&:hover {
+		.plus-logo {
+			animation: rotatePlus 2s ease-in-out 0s ;
+			transition-delay: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (min-width: 992px) {
+}
+
+@media screen and (max-width: 991px) {
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+@media screen and (max-width: 767px) {
+	header {
+		padding-top: 30px;
+	}
+}

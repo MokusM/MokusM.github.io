@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1" />
+		<title>Главная</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="icon" type="image/x-icon" href="favicon.ico" />
+		<style>
+			.loaded .main-wrapper {
+				opacity: 0;
+			}
+
+			.icon-load {
+				background: url(img/loader.gif) no-repeat left top;
+				width: 40px;
+				height: 40px;
+				position: fixed;
+				left: 50%;
+				top: 50%;
+				margin-left: -20px;
+				margin-left: -20px;
+				display: none;
+			}
+
+			.loaded .icon-load {
+				display: block;
+			}
+			body {
+				background: #101012;
+			}
+		</style>
+	</head>
+
+	<body class="loaded">
+		<!-- BEGIN BODY -->
+		<div class="main-wrapper">
+			<!-- BEGIN CONTENT -->
+			<main class="content">
+				<section class="main-sreen section-steps">
+					<div class="wrapper">
+						<div class="box-bread-crumbs">
+							<ul class="bread-crambs">
+								<li class="bread-crambs__item">
+									<a href="#" class="bread-crambs__link">PLUS</a>
+								</li>
+								<li class="bread-crambs__item">Обмен</li>
+							</ul>
+						</div>
+						<h1>Конвертер <span class="hide-mob">криптовалюты</span></h1>
+
+						<div class="steps">
+							<div class="steps__main">
+								<div class="steps-title">
+									<input type="text" value="10 BTC" id="currency-field" class="hidden-input" />
+									2. Отправляем <span>10 BTC</span> <a href="#" class="copy js-copy-currency"><i class="icon-copy"></i></a>
+								</div>
+								<p class="steps-desc">Обмен начнется автоматически при поступлении депозита на указанный ниже адрес.</p>
+								<div class="deposit-address">
+									<div class="deposit-address__title">Адрес депозита</div>
+
+									<div class="deposit-address__code">
+										<div class="deposit-address__code-icon"><i class="icon-bitcoin"></i></div>
+										<span>bc1qqgz6k30gutu0r7knzqk9n4k8rfcpzhglnqr45t </span>
+										<input type="text" value="bc1qqgz6k30gutu0r7knzqk9n4k8rfcpzhglnqr45t" id="code-field" class="hidden-input" />
+									</div>
+									<a href="#" class="deposit-address__copy js-copy-code">
+										Copy
+										<i class="icon-copy"></i>
+									</a>
+									<div class="deposit-address__rate">
+										<i class="icon-lock-time"></i>
+										<span>The rate is fixed for 30 minutes</span>
+									</div>
+									<br />
+									<div class="deposit-address__id">Order ID: 60afce9ace828</div>
+									<div class="deposit-address__qr"><img src="img/qr.jpg" alt="" /></div>
+								</div>
+								<div class="order-inf">
+									<div class="order-inf__title">Детали заявки</div>
+									<div class="order-inf__box">
+										<div class="order-inf__sm-title">Вы получаете</div>
+										<div class="order-inf__currency">
+											<div class="order-inf__icon"><i class="icon-m"></i></div>
+											<div class="order-inf__col">
+												<div class="order-inf__value">bc1qqgz6k30gutu0r7knzqk9n4k8rfcpzhglnqr45t</div>
+												<div class="order-inf__text">562244462</div>
+											</div>
+										</div>
+
+										<div class="order-inf__rate">
+											<div class="line"></div>
+											<span>RATE 1 BTC = 140.08041895 XMR</span>
+											<div class="line"></div>
+										</div>
+										<div class="order-inf__sm-title">Депозит</div>
+										<div class="order-inf__currency">
+											<div class="order-inf__icon"><i class="icon-bitcoin"></i></div>
+											<div class="order-inf__col">
+												<div class="order-inf__value">10 BTC</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="check-inf">
+									<div class="check-inf__icon"><i class="icon-check"></i></div>
+									<div class="check-inf__text">Больше Вам не нужно ничего делать, после подтверждения платежа страница обновится автоматически</div>
+								</div>
+							</div>
+							<div class="steps__aside">
+								<ul class="steps-list">
+									<li class="steps-list__item active">
+										<a href="#" class="steps-list__link"><span>1.</span> Детали </a>
+									</li>
+									<li class="steps-list__item">
+										<a href="#" class="steps-list__link"><span>2.</span> Ожидание депозита</a>
+									</li>
+									<li class="steps-list__item">
+										<a href="#" class="steps-list__link"><span>3.</span> Подтверждение</a>
+									</li>
+									<li class="steps-list__item">
+										<a href="#" class="steps-list__link"><span>4.</span> Обмен</a>
+									</li>
+									<li class="steps-list__item">
+										<a href="#" class="steps-list__link"><span>5.</span> Завершение</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="section-faq">
+					<div class="wrapper">
+						<div class="faq-plus-wr faq-plus-wr-1">
+							<i class="icon-plus faq-plus-1"></i>
+						</div>
+						<div class="faq-plus-wr faq-plus-wr-2">
+							<i class="icon-plus faq-plus-2"></i>
+						</div>
+						<h2>F.A.Q.</h2>
+						<ul class="list-faq js-list-faq">
+							<li class="list-faq__item">
+								<div class="list-faq__line list-faq__line_1"></div>
+								<a href="#" class="list-faq__link">
+									<span>Что такое PLUS?</span>
+									<i class="icon-plus"></i>
+								</a>
+								<div class="list-faq__answer">
+									<p>
+										В своём стремлении повысить качество жизни, они забывают, что высокое качество позиционных исследований предопределяет высокую востребованность укрепления моральных
+										ценностей. В своём стремлении повысить качество жизни, они забывают, что новая модель организационной деятельности позволяет выполнить важные задания по разработке
+										прогресса профессионального сообщества.
+									</p>
+								</div>
+								<div class="list-faq__line list-faq__line_2"></div>
+							</li>
+							<li class="list-faq__item">
+								<div class="list-faq__line list-faq__line_1"></div>
+								<a href="#" class="list-faq__link">
+									<span>Как работает PLUS ?</span>
+									<i class="icon-plus"></i>
+								</a>
+								<div class="list-faq__answer">
+									<p>
+										В своём стремлении повысить качество жизни, они забывают, что высокое качество позиционных исследований предопределяет высокую востребованность укрепления моральных
+										ценностей. В своём стремлении повысить качество жизни, они забывают, что новая модель организационной деятельности позволяет выполнить важные задания по разработке
+										прогресса профессионального сообщества.
+									</p>
+								</div>
+								<div class="list-faq__line list-faq__line_2"></div>
+							</li>
+							<li class="list-faq__item">
+								<div class="list-faq__line list-faq__line_1"></div>
+								<a href="#" class="list-faq__link">
+									<span>Почему нам доверяют?</span>
+									<i class="icon-plus"></i>
+								</a>
+								<div class="list-faq__answer">
+									<p>
+										В своём стремлении повысить качество жизни, они забывают, что высокое качество позиционных исследований предопределяет высокую востребованность укрепления моральных
+										ценностей.
+									</p>
+								</div>
+								<div class="list-faq__line list-faq__line_2"></div>
+							</li>
+							<li class="list-faq__item">
+								<div class="list-faq__line list-faq__line_1"></div>
+								<a href="#" class="list-faq__link">
+									<span>Как работает крипто обменник? </span>
+									<i class="icon-plus"></i>
+								</a>
+								<div class="list-faq__answer">
+									<p>
+										В своём стремлении повысить качество жизни, они забывают, что высокое качество позиционных исследований предопределяет высокую востребованность укрепления моральных
+										ценностей.
+									</p>
+								</div>
+								<div class="list-faq__line list-faq__line_2"></div>
+							</li>
+							<li class="list-faq__item">
+								<div class="list-faq__line list-faq__line_1"></div>
+								<a href="#" class="list-faq__link">
+									<span>Можно обменивать криптовалюты на фиатные деньги?</span>
+									<i class="icon-plus"></i>
+								</a>
+								<div class="list-faq__answer">
+									<p>
+										В своём стремлении повысить качество жизни, они забывают, что высокое качество позиционных исследований предопределяет высокую востребованность укрепления моральных
+										ценностей.
+									</p>
+								</div>
+								<div class="list-faq__line list-faq__line_2"></div>
+							</li>
+							<li class="list-faq__item">
+								<div class="list-faq__line list-faq__line_1"></div>
+								<a href="#" class="list-faq__link">
+									<span>Как купить криптовалюту?</span>
+									<i class="icon-plus"></i>
+								</a>
+								<div class="list-faq__answer">
+									<p>
+										В своём стремлении повысить качество жизни, они забывают, что высокое качество позиционных исследований предопределяет высокую востребованность укрепления моральных
+										ценностей.
+									</p>
+								</div>
+								<div class="list-faq__line list-faq__line_2"></div>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</main>
+			<!-- CONTENT EOF   -->
+			<!-- BEGIN HEADER -->
+			<header>
+				<div class="wrapper">
+					<a href="#" class="logo">
+						<svg width="116" height="30" viewBox="0 0 116 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M50.943 24H44.8856V0H38.8281V30H44.8856H50.943H57.0004V24H50.943Z" fill="white" />
+							<g class="plus-logo">
+								<path d="M12.1149 18V12H6.05744V18H0V24H6.05744V30H12.1149V24H18.1723V18H12.1149Z" fill="#FFCE00" />
+							</g>
+							<path
+								d="M21.2002 0H18.1715H12.1141H6.05664V6V9H12.1141V6H18.1715H21.2002C24.5318 6 27.2577 8.7 27.2577 12C27.2577 15.3 24.5318 18 21.2002 18V24C27.8937 24 33.3151 18.63 33.3151 12C33.3151 5.37 27.8937 0 21.2002 0Z"
+								fill="white"
+							/>
+							<path
+								d="M79.4731 18C79.4731 21.3 76.7473 24 73.4157 24C70.0841 24 67.3582 21.3 67.3582 18V0H61.3008V18C61.3008 24.63 66.7222 30 73.4157 30C80.1091 30 85.5305 24.63 85.5305 18V0H79.4731V18Z"
+								fill="white"
+							/>
+							<path
+								d="M106.792 12H103.763H100.735C99.0688 12 97.7059 10.65 97.7059 9C97.7059 7.35 99.0688 6 100.735 6H103.763H106.792C108.458 6 109.821 7.35 109.821 9H115.878C115.878 4.05 111.789 0 106.792 0H103.763H100.735C95.7372 0 91.6484 4.05 91.6484 9C91.6484 13.95 95.7372 18 100.735 18H103.763H106.792C108.458 18 109.821 19.35 109.821 21C109.821 22.65 108.458 24 106.792 24H103.763H100.735C99.0688 24 97.7059 22.65 97.7059 21H91.6484C91.6484 25.95 95.7372 30 100.735 30H103.763H106.792C111.789 30 115.878 25.95 115.878 21C115.878 16.05 111.82 12 106.792 12Z"
+								fill="white"
+							/>
+						</svg>
+					</a>
+					<div class="box-lang">
+						<a href="#" class="lang-select js-lang-select">
+							<img src="img/russia.svg" alt="" />
+							<i class="icon-arr"></i>
+						</a>
+						<ul class="list-lang js-list-lang">
+							<li class="list-lang__item active">
+								<a class="list-lang__link" href="#"><img src="img/russia.svg" alt="" /></a>
+							</li>
+							<li class="list-lang__item">
+								<a class="list-lang__link" href="#"><img src="img/russia.svg" alt="" /></a>
+							</li>
+							<li class="list-lang__item">
+								<a class="list-lang__link" href="#"><img src="img/russia.svg" alt="" /></a>
+							</li>
+						</ul>
+					</div>
+					<div class="theme-change">
+						<a href="#" class="theme-change__item active"><i class="icon-night"></i></a>
+						<a href="#" class="theme-change__item"><i class="icon-sun"></i></a>
+					</div>
+				</div>
+			</header>
+			<!-- HEADER EOF   -->
+			<!-- BEGIN FOOTER -->
+			<footer>
+				<div class="wrapper">
+					<div class="footer-row">
+						<div class="copyright">Авторские права © 2017-2021 PLUS. Все права защищены.</div>
+						<a href="#" class="footer-link footer-link_policy">Политика конфиденциальности</a>
+						<a href="#" class="footer-link">Правила пользования </a>
+					</div>
+				</div>
+			</footer>
+			<!-- FOOTER EOF   -->
+		</div>
+		<div class="icon-load"></div>
+		<!-- BODY EOF   -->
+
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/jquery-3.5.1.min.js"></script>
+		<script src="js/components/TweenMax.min.js"></script>
+		<script src="js/components/bootstrap.min.js"></script>
+		<script src="js/components/bootstrap-select.min.js"></script>
+		<script src="js/custom.js"></script>
+	</body>
+</html>

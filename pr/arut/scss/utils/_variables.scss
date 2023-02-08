@@ -1,0 +1,25 @@
+/* reset */
+$min-width: 320px;
+$max-width: 1252px;
+$base-bg: #fff;
+$base-font-size: 15px;
+$base-line-height: 24px;
+$base-font-family: "Montserrat", sans-serif;
+$custom-font-family: "Montserrat", sans-serif;
+$link-color: #100da9;
+$default-transition: all 0.2s linear;
+
+/* main variables */
+$url: "../img/";
+
+//text, titles
+$text-color: #676767;
+$title-color: #303030;
+$title-font-family: $custom-font-family;
+
+$font-size-h1: 50px;
+$line-height-h1: 65px;
+$font-size-h2: 36px;
+$line-height-h2: 51px;
+$font-size-h3: 28px;
+$line-height-h3: 32px;

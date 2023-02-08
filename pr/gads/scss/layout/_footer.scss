@@ -1,0 +1,139 @@
+/*
+================================================================================
+|                                     FOOTER                                   |
+================================================================================
+*/
+footer {
+	text-align: left;
+	width: 100%;
+	min-width: $min-width;
+	order: 3;
+	-webkit-order: 3;
+	.wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-top: 35px;
+		padding-bottom: 35px;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 40px;
+			width: calc(100% - 80px);
+			height: 1px;
+			background: rgba(255, 255, 255, 0.1);
+		}
+	}
+	a {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 140%;
+		color: #ffffff;
+	}
+	.policy {
+		margin: 0 auto 0 0;
+		&:last-child {
+			margin-right: 8.5%;
+		}
+	}
+	.logo {
+		margin-right: 10%;
+	}
+	.social-list {
+		margin: 0 auto;
+	}
+}
+.col-footer {
+	display: flex;
+	align-items: center;
+	width: 50%;
+}
+.copyright {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 140%;
+	color: #ffffff;
+	//margin-right: auto;
+	span {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 1250px) {
+	footer .policy:last-child {
+		margin-right: 0;
+	}
+	footer .logo {
+		margin-right: 15px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	footer a:hover {
+		color: #ffcc1e;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	footer a {
+		font-size: 12px;
+	}
+	footer .wrapper {
+		padding-top: 25px;
+		padding-bottom: 25px;
+		display: block;
+	}
+	.col-footer {
+		width: 100%;
+		margin-bottom: 25px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	footer .logo {
+		margin-right: auto;
+		min-width: 128px;
+	}
+	footer .social-list {
+		margin: 0 0 0 auto;
+	}
+	.copyright {
+		text-align: center;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+@media screen and (max-width: 767px) {
+	footer .logo {
+		min-width: 0;
+	}
+	.copyright {
+		font-size: 12px;
+		order: 3;
+		width: 100%;
+		margin-top: 10px;
+	}
+	.col-footer:first-child {
+		flex-wrap: wrap;
+	}
+	footer .wrapper::before {
+		left: 0;
+		width: 100%;
+	}
+}
+@media screen and (max-width: 480px) {
+	.col-footer:last-child {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	footer .policy {
+		margin: 0 auto 5px;
+		&:last-child {
+			margin: 0 auto;
+		}
+	}
+}

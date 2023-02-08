@@ -1,0 +1,148 @@
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+
+.jspContainer {
+    overflow: hidden;
+    position: relative;
+    max-height: 100%;
+}
+
+.jspPane {
+    position: absolute;
+}
+
+.jspVerticalBar {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #e5e9eb;
+    border-radius: 10px;
+    width: 4px;
+}
+
+.jspHorizontalBar {
+    bottom: 0;
+    height: 16px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.jspCap {
+    display: none;
+}
+
+.jspHorizontalBar .jspCap {
+    float: left;
+}
+
+.jspTrack {
+    background: #e5e9eb;
+    position: relative;
+}
+
+.jspDrag {
+    background: #9da1a8;
+    border-radius: 10px;
+    cursor: pointer;
+    left: 0;
+    position: relative;
+    top: 0;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag {
+    float: left;
+    height: 100%;
+}
+
+.jspArrow {
+    background: #50506d;
+    cursor: pointer;
+    direction: ltr;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.jspDisabled {
+    background: #80808d;
+    cursor: default;
+}
+
+.jspVerticalBar .jspArrow {
+    height: 16px;
+}
+
+.jspHorizontalBar .jspArrow {
+    float: left;
+    height: 100%;
+    width: 16px;
+}
+
+.jspVerticalBar .jspArrow:focus {
+    border: 1px solid red;
+    outline: none;
+}
+
+.jspCorner {
+    background: #eeeef4;
+    float: left;
+    height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner {
+    margin: 0 -3px 0 0;
+}
+
+.jspArrow {
+    width: 22px;
+    height: 22px;
+    border: 1px solid #a7acb8;
+    top: -45px;
+    border-radius: 50%;
+    z-index: 100;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    font-family: icomoon !important;
+    font-variant: normal;
+    color: #a7acb8;
+    font-size: 9px;
+    text-align: center;
+    line-height: 22px;
+    background: transparent;
+    position: absolute;
+    top: -17px;
+    left: 0;
+    &::before {
+        content: "\e918";
+    }
+}
+.jspArrowRight {
+    left: auto;
+    right: 0;
+    &::before {
+        content: "\e917";
+    }
+}
+.jspHorizontalBar .jspArrow {
+    width: 22px;
+    height: 22px;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag {
+    opacity: 0;
+    top: 50px;
+    visibility: hidden;
+}

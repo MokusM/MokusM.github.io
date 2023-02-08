@@ -1,0 +1,45 @@
+:root {
+    --current: #2dff7d;
+}
+:root.pink {
+    --current: #ff296a;
+}
+:root.orange {
+    --current: #ff5c00;
+}
+
+/* main color variables */
+$lightGrey: #141414;
+$grey: #898989;
+$green: #2dff7d;
+$pink: #ff296a;
+$orange: #ff5c00;
+$white: #fff;
+$lightGreen: linear-gradient(253.69deg, #feeff6 1.01%, #dce0fc 96.45%);
+
+$currentColor: var(--current);
+
+/* reset */
+$min-width: 320px;
+$max-width: 1570px;
+$base-bg: $lightGrey;
+$base-font-size: 13px;
+$base-line-height: 18px;
+$base-font-family: "Montserrat", sans-serif;
+$custom-font-family: "Montserrat", sans-serif;
+$link-color: var(--current);
+$default-transition: all 0.2s linear;
+
+/* main variables */
+
+//text, titles
+$text-color: $white;
+$title-color: $white;
+$title-font-family: $custom-font-family;
+
+$font-size-h1: 36px;
+$line-height-h1: 42px;
+$font-size-h2: 70px;
+$line-height-h2: 85px;
+$font-size-h3: 28px;
+$line-height-h3: 32px;
