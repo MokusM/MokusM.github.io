@@ -1,0 +1,223 @@
+<div class="logo-top logo"></div>
+<div class="logo-bottom logo"></div>
+<section class="panel autoload" data-count="10" data-next="slide11" data-prev="slide9">
+	<div class="containerBlock">
+		<div class="slide slide-10">
+			<div class="header">
+				<div class="header__title">менопауза та шкіра</div>
+				<div class="header__sub-title">Наука про експозом</div>
+			</div>
+			<div class="molecule">
+				<img src="../images/s9-molecule.jpg" alt="" />
+			</div>
+			<div class="title">
+				<div class="title__count">1</div>
+				<span class="title__text">ЗМЕНШЕННЯ ВИРОБЛЕННЯ ЕСТРОГЕНУ – ЖІНОЧИЙ ГОРМОН</span>
+			</div>
+			<div class="list-shema">
+				<div class="list-title">БІОЛОГІЧНИЙ ВПЛИВ</div>
+				<div class="list-shema__item">
+					<div class="list-shema__title">1. ЗАХИСНИЙ БАР’ЄР ШКІРИ</div>
+					<p>
+						Скорочення вироблення себуму<br />
+						Епідермальне стоншення
+					</p>
+				</div>
+				<div class="list-shema__item">
+					<div class="list-shema__title">2. Захисний механізм</div>
+					<p>Зменшення антиоксидантного захисту</p>
+				</div>
+				<div class="list-shema__item">
+					<div class="list-shema__title">3. СТРУКТУРА ШКІРИ</div>
+					<p>
+						Зменшення колагену, еластину,<br />
+						синтезу гіалуронової кислоти
+					</p>
+				</div>
+			</div>
+			<div class="list-icon">
+				<div class="list-title">КЛІНІЧНІ ОЗНАКИ</div>
+				<div class="list-icon__item">
+					<img class="list-icon__img" src="../images/s9-icon-1.jpg" alt="" />
+					<div class="list-icon__text">
+						СУХІСТЬ,<br />
+						СТОНШЕННЯ ШКІРИ
+					</div>
+				</div>
+				<div class="list-icon__item">
+					<img class="list-icon__img" src="../images/s9-icon-2.jpg" alt="" />
+					<div class="list-icon__text">ЗМОРШКИ</div>
+				</div>
+				<div class="list-icon__item">
+					<img class="list-icon__img" src="../images/s9-icon-3.jpg" alt="" />
+					<div class="list-icon__text">ПРОВИСАННЯ</div>
+				</div>
+				<div class="list-note"><b>NOTE:</b> Коливання естрогену протягом перименопаузи <br />може також спричиняти появу акне.</div>
+			</div>
+		</div>
+	</div>
+</section>
+<style>
+	section {
+		opacity: 0;
+	}
+	.prev {
+		display: none;
+	}
+	.next {
+		display: none;
+	}
+	.mainSlide {
+		height: 100%;
+	}
+	.molecule {
+		position: absolute;
+		right: 4.8%;
+		top: 5vh;
+		border-radius: 50%;
+		border: 1px solid #afabab;
+		width: clamp(0.02vw, 33.88vh, 19.06vw);
+		height: clamp(0.02vw, 33.88vh, 19.06vw);
+		overflow: hidden;
+	}
+	.molecule img {
+		position: absolute;
+		left: 49%;
+		top: 45%;
+
+		-webkit-transform: translate(-50%, -50%);
+
+		-ms-transform: translate(-50%, -50%);
+
+		transform: translate(-50%, -50%);
+		width: clamp(0.2vw, 28.05vh, 15.78vw);
+	}
+	.title {
+		display: -webkit-inline-box;
+		display: -ms-inline-flexbox;
+		display: inline-flex;
+		-webkit-box-align: end;
+		-ms-flex-align: end;
+		align-items: flex-end;
+		border-bottom: 2px solid #afabab;
+		margin-top: clamp(0.2vw, 3.88vh, 2.18vw);
+		position: relative;
+		z-index: 2;
+	}
+	.title__count {
+		font-weight: 400;
+		font-size: clamp(0.2vw, 8.19vh, 4.6vw);
+		line-height: 9.44vh;
+		background: #afabab;
+		color: #000000;
+		width: clamp(0.5vw, 9.44vh, 5.31vw);
+		height: clamp(0.5vw, 9.44vh, 5.31vw);
+		text-align: center;
+	}
+	.title__text {
+		-webkit-box-flex: 1;
+		-ms-flex: 1;
+		flex: 1;
+		font-weight: 400;
+		font-size: clamp(0.02vw, 4.44vh, 2.5vw);
+		line-height: 1.2;
+		color: #000000;
+		background: #fff;
+		padding-left: clamp(0.02vw, 1.11vh, 0.62vw);
+	}
+
+	.list-shema {
+		position: absolute;
+		top: 40vh;
+		left: 5%;
+		width: clamp(0.02vw, 103.47vh, 58.2vw);
+		height: clamp(0.02vw, 45.69vh, 25.7vw);
+		background-image: url(../images/s9-scheme.png);
+		background-size: contain;
+		padding: 0.55vh;
+	}
+	.list-title {
+		font-weight: 700;
+		font-size: clamp(0.02vw, 4.44vh, 2.5vw);
+		line-height: 1.2;
+		color: #ffcc00;
+		margin-bottom: clamp(0.02vw, 1.94vh, 1.09vw);
+	}
+	.list-shema__item {
+		padding-left: 40.2%;
+		margin-bottom: clamp(0.02vw, 4.02vh, 2.26vw);
+	}
+	.list-shema__title {
+		font-weight: 700;
+		font-size: clamp(0.02vw, 3.33vh, 1.87vw);
+		line-height: 1.2;
+		color: #121212;
+		margin-bottom: 2px;
+		text-transform: uppercase;
+	}
+	.list-shema__item p {
+		padding: 0;
+		margin: 0;
+		font-size: clamp(0.02vw, 2.63vh, 1.48vw);
+		line-height: 1.2;
+		color: #000;
+	}
+	.list-icon {
+		position: absolute;
+		top: 40vh;
+		left: 67%;
+		width: clamp(0.02vw, 48.88vh, 27.5vw);
+	}
+	.list-icon__item {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		padding-left: clamp(0.02vw, 0.69vh, 0.39vw);
+		margin-bottom: clamp(0.02vw, 2.91vh, 1.64vw);
+	}
+	.list-icon__img {
+		width: clamp(0.02vw, 9.3vh, 5.23vw);
+	}
+	.list-icon__text {
+		font-weight: 400;
+		font-size: clamp(0.02vw, 3.33vh, 1.87vw);
+		line-height: 1.2;
+		color: #121212;
+		padding-left: clamp(0.02vw, 2.08vh, 1.17vw);
+		-webkit-box-flex: 1;
+		-ms-flex: 1;
+		flex: 1;
+	}
+	.list-note {
+		font-style: italic;
+		font-weight: 400;
+		font-size: clamp(0.02vw, 1.668vh, 0.93vw);
+		line-height: 1.2;
+		color: #212121;
+		margin-top: clamp(-6.02vw, -1.52vh, -0.85vw);
+		padding-left: clamp(0.02vw, 1.118vh, 0.62vw);
+	}
+	.list-note b {
+		font-weight: 700;
+		font-style: normal;
+	}
+</style>
+<script>
+	TweenMax.to('section', 0.5, { opacity: 1, ease: Linear.easeNone });
+	var tl = new TimelineMax({ paused: true, onComplete: () => show_arrow_next_slide() });
+	tl.from('.header__title', 1, { opacity: 0, ease: Linear.easeNone })
+		.from('.header__sub-title', 1, { opacity: 0, ease: Linear.easeNone })
+		.from('.title', 1, { opacity: 0, top: '+=30', ease: Linear.easeNone })
+		.from('.list-shema', 1, { opacity: 0, left: '+=30', ease: Linear.easeNone })
+		.from('.list-icon', 1, { opacity: 0, left: '+=30', ease: Linear.easeNone });
+	tl.play();
+	function show_arrow_next_slide() {
+		setTimeout(function () {
+			$('.prev').show('slow');
+			$('.next').show('slow');
+		}, 2000);
+	}
+</script>

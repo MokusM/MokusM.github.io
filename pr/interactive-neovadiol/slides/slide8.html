@@ -1,0 +1,102 @@
+<div class="logo-top logo logo-top-neov"></div>
+<div class="logo-bottom logo logo-bottom-neov"></div>
+<section class="panel autoload" data-count="8" data-next="slide9" data-prev="slide7">
+	<div class="containerBlock">
+		<div class="slide slide-8">
+			<div class="content">
+				<img class="vichy-logo" src="../images/vichy-logo-black.png" alt="" />
+				<div class="title">МЕНОПАУЗА:</div>
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 45" fill="none" class="arrow">
+					<path fill="#fff" fill-rule="evenodd" d="M44.144 44.295.024.175h22.52l21.6 21.6L65.743.175h22.52l-44.12 44.12Z" clip-rule="evenodd" />
+				</svg>
+				<div class="list">
+					<div class="list__item list__item--1">ФІЗІОЛОГІЧНІ ЗМІНИ</div>
+					<div class="list__item list__item--2">ВПЛИВ НА ШКІРУ</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<style>
+	section {
+		opacity: 0;
+	}
+	.prev {
+		display: none;
+	}
+	.next {
+		display: none;
+	}
+	.mainSlide {
+		height: 100%;
+	}
+	.slide-8 {
+		background-image: url(../images/s7-bg.jpg);
+		background-position: center center;
+		background-size: cover;
+	}
+	.vichy-logo {
+		position: absolute;
+		top: 4.5vh;
+		right: 5.1vh;
+		width: clamp(0.02vw, 25.13vh, 14.14vw);
+	}
+	.content {
+		text-align: center;
+		padding-top: 11.5vh;
+	}
+	.title {
+		color: #ffffff;
+		line-height: 1.2;
+		font-size: clamp(0.02vw, 13.3vh, 7.5vw);
+		margin-bottom: 8.2vh;
+		position: relative;
+	}
+	.arrow {
+		width: clamp(0.02vw, 12.36vh, 6.95vw);
+		height: clamp(0.02vw, 6.25vh, 3.51vw);
+		margin-bottom: 4.2vh;
+		position: relative;
+	}
+	.list {
+		text-align: left;
+		margin: 0 auto;
+		width: clamp(0.02vw, 80.55vh, 45.31vw);
+	}
+	.list__item {
+		font-weight: 400;
+		font-size: clamp(0.02vw, 8.05vh, 4.56vw);
+		line-height: 1.2;
+
+		color: #ffffff;
+		position: relative;
+	}
+
+	.list__item::before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: clamp(0.02vw, 2.22vh, 1.25vw);
+		right: calc(100% + clamp(0.02vw, 2.22vh, 1.25vw));
+		width: clamp(0.02vw, 5vh, 2.81vw);
+		height: clamp(0.02vw, 5vh, 2.81vw);
+		background-image: url(../images/dot.png);
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+	}
+</style>
+<script>
+	TweenMax.to('section', 0.5, { opacity: 1, ease: Linear.easeNone });
+	var tl = new TimelineMax({ paused: true, onComplete: () => show_arrow_next_slide() });
+	tl.from('.title', 1, { opacity: 0, top: '+=30', ease: Linear.easeNone })
+		.from('.arrow', 1, { opacity: 0, top: '+=30', ease: Linear.easeNone })
+		.from('.list__item--1', 1, { opacity: 0, top: '+=30', ease: Linear.easeNone })
+		.from('.list__item--2', 1, { opacity: 0, top: '+=30', ease: Linear.easeNone });
+	tl.play();
+	function show_arrow_next_slide() {
+		setTimeout(function () {
+			$('.prev').show('slow');
+			$('.next').show('slow');
+		}, 2000);
+	}
+</script>

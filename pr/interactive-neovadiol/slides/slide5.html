@@ -1,0 +1,292 @@
+<div class="logo-top logo"></div>
+<div class="logo-bottom logo"></div>
+<section class="panel autoload" data-count="5" data-next="slide6" data-prev="slide4">
+	<div class="containerBlock">
+		<div class="slide slide-5">
+			<div class="header">
+				<div class="header__title">МЕНОПАУЗА</div>
+				<div class="header__sub-title">симптоми</div>
+			</div>
+			<div class="slide-content">
+				<div class="slide-content__women">
+					<img src="../images/s4-women.jpg" alt="" />
+				</div>
+				<div class="content-item content-item--1">
+					<div class="content-item__title">
+						ЦЕНТРАЛЬНА НЕРВОВА<br />
+						СИСТЕМА
+					</div>
+					<ul class="list-text">
+						<li class="list-text__item">▪ Вазомоторні симптоми</li>
+						<li class="list-text__item">▪ Порушення сну</li>
+						<li class="list-text__item">▪ Депресія та тривожність</li>
+						<li class="list-text__item">▪ Когнітивні зміни</li>
+						<li class="list-text__item">▪ Мігрені</li>
+					</ul>
+					<div class="content-item__arrow content-item__arrow--1"></div>
+				</div>
+				<div class="content-item content-item--2">
+					<div class="content-item__title">СТАТЕВА ФУНКЦІЯ</div>
+					<ul class="list-text">
+						<li class="list-text__item">▪ Зниження лібідо</li>
+						<li class="list-text__item">▪ Диспареунія (статеві порушення)</li>
+					</ul>
+					<div class="content-item__arrow content-item__arrow--2"></div>
+				</div>
+				<div class="content-item content-item--3">
+					<div class="content-item__title">УРОГЕНІТАЛЬНА СИСТЕМА</div>
+					<ul class="list-text">
+						<li class="list-text__item">▪ Вагінальна сухість</li>
+						<li class="list-text__item">▪ Дискомфорт</li>
+						<li class="list-text__item">▪ Дизурія</li>
+						<li class="list-text__item">▪ Ризик урогенітальних інфекцій та ін.</li>
+					</ul>
+					<div class="content-item__arrow content-item__arrow--3"></div>
+				</div>
+				<div class="content-item content-item--4">
+					<div class="content-item__title">ШКІРА, ВОЛОССЯ ТА СЛИЗОВІ</div>
+					<ul class="list-text">
+						<li class="list-text__item">▪ Стоншення шкіри</li>
+						<li class="list-text__item">▪ Втрата еластичності</li>
+						<li class="list-text__item">▪ Сухість</li>
+						<li class="list-text__item">▪ Глибокі зморшки</li>
+						<li class="list-text__item">▪ Випадіння волосся</li>
+					</ul>
+					<div class="content-item__arrow content-item__arrow--4"></div>
+				</div>
+				<div class="content-item content-item--5">
+					<div class="content-item__title">МЕТАБОЛІЧНІ ЗМІНИ</div>
+					<ul class="list-text">
+						<li class="list-text__item">▪ Набір ваги</li>
+						<li class="list-text__item">
+							▪ Ризик вісцерального<br />
+							ожиріння
+						</li>
+						<li class="list-text__item">▪ Ризик діабету типу ІІ</li>
+					</ul>
+					<div class="content-item__arrow content-item__arrow--5"></div>
+				</div>
+				<div class="content-item content-item--6">
+					<div class="content-item__title">ОПОРНО-РУХОВА СИСТЕМА</div>
+					<ul class="list-text">
+						<li class="list-text__item">▪ Біль у суглобах</li>
+						<li class="list-text__item">
+							▪ Саркопенія (втрата<br />
+							м’язової маси)
+						</li>
+					</ul>
+					<div class="content-item__arrow content-item__arrow--6"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<style>
+	section {
+		opacity: 0;
+	}
+	.prev {
+		display: none;
+	}
+	.next {
+		display: none;
+	}
+	.mainSlide {
+		height: 100%;
+	}
+	.header {
+		width: 30%;
+	}
+	.slide {
+		width: 100%;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		padding: 4.9vh 4.2vw 9vh;
+	}
+	.slide-content {
+		background: #ffcc00;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 61.2%;
+		height: 100%;
+	}
+	.slide-content__women img {
+		position: absolute;
+		bottom: 0;
+		left: 46%;
+		-webkit-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		transform: translateX(-50%);
+		width: clamp(1.5vw, 36.3vh, 20.4vw);
+	}
+	.content-item {
+		position: absolute;
+		width: clamp(0.3vw, 27.7vh, 15.68vw);
+	}
+
+	.content-item::before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 5%;
+		right: 0;
+		width: 2px;
+		height: 90%;
+		background: #000;
+	}
+
+	.content-item__title {
+		font-size: clamp(0.3vw, 2.08vh, 8.98vw);
+		font-weight: 700;
+		line-height: 1.2;
+	}
+	.list-text {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	.list-text__item {
+		font-size: clamp(0.3vw, 2.08vh, 8.98vw);
+		font-weight: 400;
+		line-height: 1.2;
+	}
+	.content-item--1 {
+		left: 5.4%;
+		top: 10.5vh;
+	}
+	.content-item--2 {
+		left: 5.4%;
+		top: 50.8vh;
+		width: clamp(0.3vw, 24.4vh, 13.75vw);
+	}
+	.content-item--3 {
+		left: 5.4%;
+		top: 77.6vh;
+	}
+	.content-item--4 {
+		left: 60.6%;
+		top: 10.5vh;
+		width: clamp(0.3vw, 34.7vh, 19.5vw);
+		padding-left: clamp(0.3vw, 2.08vh, 8.98vw);
+		border-right: none;
+	}
+	.content-item--5 {
+		left: 63.6%;
+		top: 49.8vh;
+		width: clamp(0.3vw, 34.7vh, 19.5vw);
+		padding-left: clamp(0.3vw, 2.08vh, 8.98vw);
+	}
+	.content-item--6 {
+		left: 64%;
+		top: 75.6vh;
+		width: clamp(0.3vw, 34.7vh, 19.5vw);
+		padding-left: clamp(0.3vw, 2.08vh, 8.98vw);
+	}
+	.content-item--4:before,
+	.content-item--5:before,
+	.content-item--6:before {
+		right: auto;
+		left: 0;
+	}
+
+	.content-item__arrow {
+		position: absolute;
+		left: 100%;
+		top: 50%;
+		background: #000;
+		height: 1px;
+		margin-top: -1px;
+		-webkit-transform-origin: left top;
+		-ms-transform-origin: left top;
+		transform-origin: left top;
+	}
+	.content-item__arrow::before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		right: -5px;
+		width: 0;
+		height: 0;
+		margin-top: -3px;
+		border-top: 4px solid transparent;
+		border-bottom: 4px solid transparent;
+
+		border-left: 8px solid #000;
+	}
+	.content-item__arrow--1 {
+		width: clamp(0.3vw, 12.22vh, 6.87vw);
+	}
+	.content-item__arrow--2 {
+		width: clamp(0.3vw, 16.8vh, 9.45vw);
+		-webkit-transform: rotate(24deg);
+		-ms-transform: rotate(24deg);
+		transform: rotate(24deg);
+	}
+	.content-item__arrow--3 {
+		width: clamp(0.3vw, 23.19vh, 13.04vw);
+		-webkit-transform: rotate(-53deg);
+		-ms-transform: rotate(-53deg);
+		transform: rotate(-53deg);
+	}
+	.content-item__arrow--4 {
+		left: auto;
+		-webkit-transform-origin: right top;
+		-ms-transform-origin: right top;
+		transform-origin: right top;
+		right: 100%;
+		width: clamp(0.3vw, 5.41vh, 3.04vw);
+		top: 59%;
+	}
+	.content-item__arrow--5::before,
+	.content-item__arrow--6::before,
+	.content-item__arrow--4::before {
+		-webkit-transform: scale(-1, 1);
+		-ms-transform: scale(-1, 1);
+		transform: scale(-1, 1);
+		right: auto;
+		left: -3px;
+	}
+	.content-item__arrow--5 {
+		left: auto;
+		-webkit-transform-origin: right top;
+		-ms-transform-origin: right top;
+		transform-origin: right top;
+		right: 100%;
+		width: clamp(0.3vw, 8.88vh, 5vw);
+	}
+	.content-item__arrow--6 {
+		left: auto;
+		-webkit-transform-origin: right top;
+		-ms-transform-origin: right top;
+		transform-origin: right top;
+		right: 100%;
+		width: clamp(0.3vw, 13.88vh, 7.81vw);
+		top: 59%;
+		-webkit-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+	}
+</style>
+<script>
+	TweenMax.to('section', 0.5, { opacity: 1, ease: Linear.easeNone });
+	var tl = new TimelineMax({ paused: true, onComplete: () => show_arrow_next_slide() });
+	tl.from('.content-item--1', 1, { opacity: 0, ease: Linear.easeNone })
+		.from('.content-item--2', 1, { opacity: 0, ease: Linear.easeNone })
+		.from('.content-item--3', 1, { opacity: 0, ease: Linear.easeNone })
+		.from('.content-item--4', 1, { opacity: 0, ease: Linear.easeNone })
+		.from('.content-item--5', 1, { opacity: 0, ease: Linear.easeNone })
+		.from('.content-item--6', 1, { opacity: 0, ease: Linear.easeNone });
+	tl.play();
+	function show_arrow_next_slide() {
+		setTimeout(function () {
+			$('.prev').show('slow');
+			$('.next').show('slow');
+		}, 2000);
+	}
+</script>
