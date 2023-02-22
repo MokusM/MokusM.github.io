@@ -13,11 +13,8 @@ const mobileCheck = () => {
 
 	return 'unknown';
 };
-var root = document.documentElement;
 
 $(document).ready(function () {
-	root.style.setProperty('--ph', (window.screen.height / 100).toFixed(1));
-
 	mobileCheck();
 	viewport = $('meta[name=viewport]');
 	if ($(window).width() < 900) {
@@ -38,7 +35,7 @@ $(document).ready(function () {
 		return results == null ? null : results[1];
 	}
 
-	var url = 'slides/slide3.html';
+	var url = 'slides/slide1.html';
 	if (gup('slide')) {
 		url = 'slides/slide' + gup('slide') + '.html';
 	}
@@ -106,20 +103,15 @@ var mql = window.matchMedia('(orientation: portrait)');
 
 if (mql.matches) {
 	$('.rotateBlock').addClass('show');
-
-	root.style.setProperty('--ph', (window.screen.width / 100).toFixed(1));
 } else {
 	$('.rotateBlock').removeClass('show');
-	root.style.setProperty('--ph', (window.screen.height / 100).toFixed(1));
 }
 
 // Прослушка события изменения ориентации
 mql.addListener(function (m) {
 	if (m.matches) {
-		root.style.setProperty('--ph', (window.screen.width / 100).toFixed(1));
 		$('.rotateBlock').addClass('show');
 	} else {
-		root.style.setProperty('--ph', (window.screen.height / 100).toFixed(1));
 		$('.rotateBlock').removeClass('show');
 	}
 });
