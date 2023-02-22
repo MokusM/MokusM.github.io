@@ -92,6 +92,9 @@
 		list-style: none;
 		padding: 0;
 	}
+	.mobile .list {
+		margin-top: clamp(0.04vw, calc(54vh / var(--ph)), 4.2vw);
+	}
 	.list__item {
 		padding: 0 10px;
 		width: 33.3%;
@@ -141,12 +144,21 @@
 		line-height: 1.2;
 		opacity: 0;
 	}
+
+	.mobile .list__title {
+		font-size: clamp(0.04vw, calc(29vh / var(--ph)), 2.26vw);
+	}
+
 	.list__sub-title {
 		font-size: clamp(0.04vw, 2.9vh, 1.64vw);
 		text-align: center;
 		text-transform: uppercase;
 		margin-bottom: clamp(0.04vw, 3.9vh, 2.6vw);
 		opacity: 0;
+	}
+	.mobile .list__sub-title {
+		font-size: clamp(0.04vw, calc(21vh / var(--ph)), 1.64vw);
+		margin-bottom: clamp(0.04vw, calc(28vh / var(--ph)), 2.6vw);
 	}
 	.list-text {
 		padding: 0;
@@ -157,6 +169,9 @@
 	.list-text__item {
 		font-size: clamp(0.04vw, 2.9vh, 1.64vw);
 		line-height: 1.2;
+	}
+	.mobile .list-text__item {
+		font-size: clamp(0.04vw, calc(21vh / var(--ph)), 1.64vw);
 	}
 </style>
 <script>

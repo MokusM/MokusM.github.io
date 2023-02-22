@@ -2,11 +2,9 @@
     --ph: 7.2;
 }
 
-@media screen and (max-width: 2048px) {
-    :root {
-        --ph: 8;
-      }
-}
+:root.mobile {
+    --ph: 9;
+} 
   
 html,
 body,
@@ -311,7 +309,7 @@ color: #767171;
 
 .mobile .help-inf {
     bottom: calc(21.6vh / var(--ph));
-    font-size: clamp(0.04vw, calc(8.7vh / var(--ph)), 1.64vw);
+    font-size: clamp(0.04vw, calc(21vh / var(--ph)), 1.64vw);
 }
 
 .hand {

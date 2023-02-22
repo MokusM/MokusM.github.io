@@ -7,7 +7,10 @@
 				<div class="header__title">менопауза та шкіра</div>
 				<div class="header__sub-title">Наука про експозом</div>
 			</div>
-			<div class="sub-title">УПРОДОВЖ МЕНОПАУЗИ ХРОНОЛОГІЧНЕ СТАРІННЯ ПРИШВИДШУЄТЬСЯ ЧЕРЕЗ ФАКТОРИ ЕКСПОЗОМУ, А САМЕ – ВНУТРІШНІ ЗМІНИ ОРГАНІЗМУ:</div>
+			<div class="sub-title">
+				УПРОДОВЖ МЕНОПАУЗИ ХРОНОЛОГІЧНЕ СТАРІННЯ ПРИШВИДШУЄТЬСЯ ЧЕРЕЗ<br />
+				ФАКТОРИ ЕКСПОЗОМУ, А САМЕ – ВНУТРІШНІ ЗМІНИ ОРГАНІЗМУ:
+			</div>
 			<img class="scheme" src="images/s8-scheme.png" alt="" />
 			<div class="list-text">
 				<div class="list-text__item list-text__item--1">
@@ -26,7 +29,7 @@
 	</div>
 </section>
 <style>
-section {
+	section {
 		opacity: 0;
 	}
 	.prev {
@@ -45,11 +48,17 @@ section {
 		top: 36.4vh;
 		width: clamp(0.02vw, 49.4vh, 27.8vw);
 	}
+	.mobile .scheme {
+		width: clamp(0.02vw, calc(356vh / var(--ph)), 27.8vw);
+	}
 	.list-text {
 		left: 47%;
 		top: 41.4vh;
 		width: clamp(0.02vw, 75.1vh, 42.26vw);
 		position: absolute;
+	}
+	.mobile .list-text {
+		top: calc(298vh / var(--ph));
 	}
 	.list-text__item {
 		position: relative;
@@ -63,6 +72,9 @@ section {
 		font-size: clamp(0.02vw, 2.91vh, 1.64vw);
 		line-height: 1.2;
 		position: relative;
+	}
+	.mobile .list-text__title {
+		font-size: clamp(0.02vw, calc(21vh / var(--ph)), 1.64vw);
 	}
 	.list-text__count {
 		position: absolute;
@@ -81,6 +93,9 @@ section {
 		color: #121212;
 		position: relative;
 	}
+	.mobile .list-text__title {
+		font-size: clamp(0.02vw, calc(32vh / var(--ph)), 2.5vw);
+	}
 	.list-text__label {
 		margin-bottom: 4px;
 		border-radius: clamp(0.02vw, 1.38vh, 0.78vw);
@@ -92,7 +107,8 @@ section {
 		position: relative;
 		background: -webkit-gradient(
 			linear,
-			left top, right top,
+			left top,
+			right top,
 			from(#ffcc00),
 			color-stop(0.39%, #ffcc01),
 			color-stop(0.78%, #ffcc03),
@@ -869,6 +885,9 @@ section {
 			#ffffff 100%
 		);
 	}
+	.mobile .sub-title {
+		font-size: clamp(0.02vw, calc(27vh / var(--ph)), 2.1vw);
+	}
 	.sub-title {
 		position: relative;
 		z-index: 2;
@@ -881,7 +900,8 @@ section {
 		padding: clamp(0.02vw, 1.2vh, 0.68vw) clamp(0.02vw, 2.36vh, 1.32vw);
 		background: -webkit-gradient(
 			linear,
-			left top, right top,
+			left top,
+			right top,
 			from(#ffcc00),
 			color-stop(0.39%, #ffcc01),
 			color-stop(0.78%, #ffcc03),
