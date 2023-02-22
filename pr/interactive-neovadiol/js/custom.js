@@ -13,9 +13,9 @@ const mobileCheck = () => {
 
 	return 'unknown';
 };
+var root = document.documentElement;
 
 $(document).ready(function () {
-	let root = document.documentElement;
 	root.style.setProperty('--ph', (window.screen.height / 100).toFixed(1));
 
 	mobileCheck();
@@ -106,15 +106,20 @@ var mql = window.matchMedia('(orientation: portrait)');
 
 if (mql.matches) {
 	$('.rotateBlock').addClass('show');
+
+	root.style.setProperty('--ph', (window.screen.width / 100).toFixed(1));
 } else {
 	$('.rotateBlock').removeClass('show');
+	root.style.setProperty('--ph', (window.screen.height / 100).toFixed(1));
 }
 
 // Прослушка события изменения ориентации
 mql.addListener(function (m) {
 	if (m.matches) {
+		root.style.setProperty('--ph', (window.screen.width / 100).toFixed(1));
 		$('.rotateBlock').addClass('show');
 	} else {
+		root.style.setProperty('--ph', (window.screen.height / 100).toFixed(1));
 		$('.rotateBlock').removeClass('show');
 	}
 });
