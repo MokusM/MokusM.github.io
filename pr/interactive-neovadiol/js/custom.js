@@ -1,4 +1,24 @@
+const mobileCheck = () => {
+	const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+	if (/android/i.test(userAgent)) {
+		document.documentElement.classList.add('mobile');
+		return 'Android';
+	}
+
+	if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+		document.documentElement.classList.add('mobile');
+		return 'iOS';
+	}
+
+	return 'unknown';
+};
+
 $(document).ready(function () {
+	let root = document.documentElement;
+	root.style.setProperty('--ph', (window.screen.height / 100).toFixed(1));
+
+	mobileCheck();
 	viewport = $('meta[name=viewport]');
 	if ($(window).width() < 900) {
 		viewport.attr('content', 'width=device-width, initial-scale=0.5, maximum-scale=0.5, user-scalable=no');
@@ -18,7 +38,7 @@ $(document).ready(function () {
 		return results == null ? null : results[1];
 	}
 
-	var url = 'slides/slide1.html';
+	var url = 'slides/slide3.html';
 	if (gup('slide')) {
 		url = 'slides/slide' + gup('slide') + '.html';
 	}

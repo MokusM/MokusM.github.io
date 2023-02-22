@@ -95,11 +95,23 @@
 		margin-bottom: 3.6vh;
 	}
 
+	.mobile .table-title {
+		font-size: clamp(0.5vw, calc(24vh / var(--ph)), 1.97vw);
+		margin-top: calc(29vh / var(--ph));
+		margin-bottom: calc(26vh / var(--ph));
+	}
+
 	.logo-world-health {
 		position: absolute;
 		right: 6vh;
 		top: 4vh;
 		width: clamp(0.5vw, 8.33vh, 4.843vw);
+	}
+
+	.mobile .logo-world-health {
+		right: calc(44vh / var(--ph));
+		top: calc(29vh / var(--ph));
+		width: clamp(0.5vw, calc(60vh / var(--ph)), 4.843vw);
 	}
 
 	.table {
@@ -746,6 +758,9 @@
 		padding: clamp(0.2vw, 2.36vh, 0.8vw);
 		position: relative;
 	}
+	.mobile .table__cell {
+		padding: clamp(0.2vw, calc(17vh / var(--ph)), 0.8vw);
+	}
 
 	.table__cell::before {
 		content: '';
@@ -766,6 +781,9 @@
 		color: #000000;
 		margin: 0 0 3.2vh 0;
 	}
+	.mobile .table__cell p {
+		padding: clamp(0.2vw, calc(179vh / var(--ph)), 0.8vw);
+	}
 	.table__cell p:last-child {
 		margin-bottom: 0;
 	}
@@ -779,6 +797,10 @@
 		left: -69%;
 		top: 40%;
 		width: clamp(0.1vw, 18vh, 10.1vw);
+	}
+	.mobile .table__cell--1 p {
+		font-size: clamp(0.5vw, calc(15vh / var(--ph)), 1.36vw);
+		width: clamp(0.1vw, calc(130vh / var(--ph)), 10.1vw);
 	}
 	.table__cell--1 {
 		width: 5%;
