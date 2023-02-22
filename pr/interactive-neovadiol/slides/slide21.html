@@ -178,6 +178,10 @@
 		display: inline-block;
 	}
 
+	.mobile .content-item__title {
+		font-size: clamp(0.02vw, calc(21vh / var(--ph)), 1.64vw);
+	}
+
 	.hand {
 		left: 110%;
 		top: 110%;
@@ -196,6 +200,9 @@
 		padding-left: clamp(1px, 2.91vh, 1.64vw);
 		margin-bottom: clamp(1px, 0.69vh, 0.39vw);
 	}
+	.mobile .list-text__item {
+		font-size: clamp(1px, calc(16vh / var(--ph)), 1.25vw);
+	}
 	.list-text__item::before {
 		content: '';
 		display: block;
@@ -212,6 +219,9 @@
 		left: 8.2%;
 		padding-left: 0;
 	}
+	.mobile .content-item--1 {
+		top: 50.6vh;
+	}
 	.content-item--1:before {
 		top: auto;
 		bottom: 0;
@@ -226,9 +236,38 @@
 		top: 36vh;
 		left: 68.2%;
 	}
+	.mobile .content-item--2 {
+		top: 32.6vh;
+	}
 	.content-item--3 {
 		top: 62.8vh;
 		left: 68.2%;
+	}
+	.mobile .content-item--3 {
+		top: 58.6vh;
+	}
+	.mobile .slide-21 {
+		padding: calc(78vh / var(--ph)) 5vh calc(65vh / var(--ph)) 7.2vw;
+	}
+	.mobile .title-img {
+		width: clamp(0.02vw, calc(56vh / var(--ph)), 4.37vw);
+	}
+	.mobile .center-img {
+		top: 50%;
+		width: clamp(0.02vw, calc(304vh / var(--ph)), 23.75vw);
+	}
+	.mobile .title {
+		font-size: clamp(0.02vw, calc(89vh / var(--ph)), 6.95vw);
+	}
+	.mobile .sub-title {
+		top: calc(280vh / var(--ph));
+		font-size: clamp(0.02vw, calc(21vh / var(--ph)), 1.64vw);
+	}
+	.mobile .sub-title--sm {
+		font-size: clamp(0.02vw, calc(18vh / var(--ph)), 1.4vw);
+	}
+	.mobile .inf {
+		font-size: clamp(0.02vw, calc(21vh / var(--ph)), 1.64vw);
 	}
 </style>
 <script>

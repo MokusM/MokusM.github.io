@@ -77,6 +77,9 @@
 	.slide-22 {
 		padding: 18.6vh 5vh 9vh 7.5vw;
 	}
+	.mobile .slide-22 {
+		padding: calc(130vh / var(--ph)) 5vh calc(65vh / var(--ph)) 7.2vw;
+	}
 	.center-img {
 		position: absolute;
 		left: 53.2%;
@@ -86,6 +89,7 @@
 		transform: translate(-50%, -50%);
 		width: clamp(0.02vw, 58.05vh, 32.65vw);
 	}
+
 	.title {
 		font-weight: 400;
 		font-size: clamp(0.02vw, 12.36vh, 6.95vw);
@@ -225,6 +229,29 @@
 	.content-item--left::before {
 		left: auto;
 		right: 0;
+	}
+	.mobile .center-img {
+		width: clamp(0.02vw, calc(420vh / var(--ph)), 32.65vw);
+	}
+	.mobile .title {
+		font-size: clamp(0.02vw, calc(89vh / var(--ph)), 6.95vw);
+	}
+	.mobile .sub-title {
+		top: calc(280vh / var(--ph));
+		font-size: clamp(0.02vw, calc(21vh / var(--ph)), 1.64vw);
+	}
+	.mobile .sub-title--sm {
+		font-size: clamp(0.02vw, calc(18vh / var(--ph)), 1.4vw);
+	}
+	.mobile .inf {
+		top: calc(257vh / var(--ph));
+		font-size: clamp(0.02vw, calc(21vh / var(--ph)), 1.64vw);
+	}
+	.mobile .item-img {
+		top: calc(430vh / var(--ph));
+	}
+	.content-item {
+		top: calc(430vh / var(--ph));
 	}
 </style>
 <script>

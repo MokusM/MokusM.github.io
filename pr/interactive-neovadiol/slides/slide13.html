@@ -62,6 +62,9 @@
 		margin-top: clamp(0.02vw, 8.33vh, 4.68vw);
 		width: clamp(0.02vw, 89.44vh, 50.31vw);
 	}
+	.mobile .list {
+		margin-top: clamp(0.02vw, calc(60vh / var(--ph)), 4.68vw);
+	}
 	.list__item {
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -73,6 +76,10 @@
 		padding-left: clamp(0.02vw, 3.88vh, 2.18vw);
 		padding-bottom: clamp(0.02vw, 3.33vh, 1.87vw);
 		margin-bottom: clamp(0.02vw, 3.19vh, 1.79vw);
+	}
+	.mobile .list__item {
+		margin-bottom: clamp(0.02vw, calc(23vh / var(--ph)), 1.79vw);
+		padding-bottom: clamp(0.02vw, calc(23vh / var(--ph)), 1.79vw);
 	}
 	.list__item:last-child {
 		border-bottom: none;

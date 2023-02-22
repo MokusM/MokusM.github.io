@@ -67,10 +67,12 @@
 	.slide-16 {
 		padding: 10.8vh 5vh 9vh 7.2vw;
 	}
+
 	.title-img {
 		margin-bottom: -3px;
 		width: clamp(0.02vw, 7.77vh, 4.37vw);
 	}
+
 	.center-img {
 		position: absolute;
 		left: 48.5%;
@@ -80,14 +82,15 @@
 		transform: translate(-50%, -50%);
 		width: clamp(0.02vw, 60.97vh, 34.29vw);
 	}
+
 	.title {
 		font-weight: 400;
 		font-size: clamp(0.02vw, 12.36vh, 6.95vw);
 		line-height: 0.9;
 		position: relative;
-
 		color: #000000;
 	}
+
 	.sub-title {
 		font-weight: 700;
 		font-size: clamp(0.02vw, 2.91vh, 1.64vw);
@@ -102,6 +105,7 @@
 		top: 36vh;
 		width: clamp(0.02vw, 50.55vh, 28.43vw);
 	}
+
 	.sub-title--sm {
 		text-transform: none;
 		left: 68%;
@@ -110,6 +114,7 @@
 		line-height: 1.2;
 		width: clamp(0.02vw, 48.33vh, 27.18vw);
 	}
+
 	.inf {
 		position: absolute;
 		left: 69%;
@@ -144,6 +149,7 @@
 		left: 6%;
 		top: 54vh;
 	}
+
 	.list-perceng__item {
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -159,9 +165,11 @@
 
 		color: #eac216;
 	}
+
 	.list-perceng__count span {
 		font-size: clamp(0.02vw, 10.55vh, 5.93vw);
 	}
+
 	.list-perceng__title {
 		font-weight: 700;
 		font-size: clamp(0.02vw, 2.5vh, 1.4vw);
@@ -177,6 +185,7 @@
 		top: 52.3vh;
 		width: clamp(0.02vw, 38.47vh, 24.64vw);
 	}
+
 	.list-icon__item {
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -186,6 +195,7 @@
 		align-items: center;
 		margin-bottom: clamp(0.02vw, 2.5vh, 1.4vw);
 	}
+
 	.list-icon__item img {
 		width: clamp(0.02vw, 9.72vh, 5.46vw);
 		height: clamp(0.02vw, 9.72vh, 5.46vw);
@@ -198,6 +208,7 @@
 
 		color: #000000;
 	}
+
 	.note {
 		position: absolute;
 		left: 52%;
@@ -209,6 +220,54 @@
 		font-style: italic;
 
 		color: #000000;
+	}
+	.mobile .slide-16 {
+		padding: calc(78vh / var(--ph)) 5vh calc(65vh / var(--ph)) 7.2vw;
+	}
+	.mobile .title-img {
+		width: clamp(0.02vw, calc(56vh / var(--ph)), 4.37vw);
+	}
+	.mobile .center-img {
+		width: clamp(0.02vw, calc(439vh / var(--ph)), 34.29vw);
+	}
+	.mobile .title {
+		font-size: clamp(0.02vw, calc(89vh / var(--ph)), 6.95vw);
+	}
+	.mobile .sub-title {
+		top: calc(280vh / var(--ph));
+		font-size: clamp(0.02vw, calc(21vh / var(--ph)), 1.64vw);
+	}
+	.mobile .sub-title--sm {
+		font-size: clamp(0.02vw, calc(18vh / var(--ph)), 1.4vw);
+	}
+	.mobile .inf {
+		font-size: clamp(0.02vw, calc(21vh / var(--ph)), 1.64vw);
+	}
+	.mobile .list-perceng {
+		top: calc(440vh / var(--ph));
+	}
+	.mobile .list-perceng__count {
+		font-size: clamp(0.02vw, calc(53vh / var(--ph)), 4.6vw);
+	}
+	.mobile .list-perceng__count span {
+		font-size: clamp(0.02vw, calc(76vh / var(--ph)), 5.93vw);
+	}
+	.mobile .list-perceng__title {
+		font-size: clamp(0.02vw, calc(18vh / var(--ph)), 1.4vw);
+	}
+
+	.mobile .list-icon {
+		top: calc(440vh / var(--ph));
+	}
+	.mobile .list-icon__item {
+		margin-bottom: clamp(0.02vw, calc(18vh / var(--ph)), 1.4vw);
+	}
+
+	.mobile .list-icon__title {
+		font-size: clamp(0.02vw, calc(18vh / var(--ph)), 1.4vw);
+	}
+	.mobile .note {
+		top: calc(753vh / var(--ph));
 	}
 </style>
 <script>
