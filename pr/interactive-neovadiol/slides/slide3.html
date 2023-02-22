@@ -122,6 +122,7 @@
 	.table__row {
 		display: table-row;
 	}
+
 	.table__row--1 {
 		text-transform: uppercase;
 		font-size: clamp(0.5vw, 2.96vh, 1.66vw);
@@ -751,6 +752,9 @@
 			#ffcc00 100%
 		);
 	}
+	.mobile .table__row--1 {
+		font-size: clamp(0.5vw, calc(21vh / var(--ph)), 1.66vw);
+	}
 	.table__cell {
 		display: table-cell;
 		text-align: center;
@@ -818,14 +822,23 @@
 	.table__row--2 .table__cell {
 		padding: clamp(0.2vw, 2.16vh, 0.7vw);
 	}
+	.mobile .table__row--2 .table__cell {
+		padding: clamp(0.2vw, calc(15.55vh / var(--ph)), 0.7vw);
+	}
 	.table__row--3 {
 		font-weight: 700;
 		font-size: clamp(0.5vw, 2.8vh, 1.81vw);
 		color: #000000;
 	}
+	.mobile .table__row--3 {
+		font-size: clamp(0.5vw, calc(20.16vh / var(--ph)), 1.81vw);
+	}
 	.table__row--3 small {
 		display: block;
 		font-size: clamp(0.4vw, 1.42vh, 0.9vw);
+	}
+	.mobile .table__row--3 small {
+		font-size: clamp(0.4vw, calc(10.22vh / var(--ph)), 0.9vw);
 	}
 	.table__row--4 .table__cell {
 		vertical-align: top;
@@ -849,6 +862,10 @@
 		background-repeat: no-repeat;
 		background-position: center right;
 		background-size: 100% 100%;
+	}
+
+	.mobile .table__row--3 .table-wrap__arrow {
+		height: clamp(0.04vw, calc(117vh / var(--ph)), 9.14vw);
 	}
 </style>
 <script>

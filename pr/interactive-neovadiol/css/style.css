@@ -261,6 +261,10 @@ body {
     padding: 8.9vh 5vw 9vh;
     min-height: 100%;
 }
+.mobile .slide { 
+    padding: calc(64vh / var(--ph)) 5vw calc(64vh / var(--ph)); 
+}
+
 .containerBlock {
     height: 100%;
 }
@@ -297,6 +301,11 @@ text-transform: uppercase;
     font-size: clamp(0.04vw, 2.9vh, 1.64vw);
 line-height: 1;
 color: #767171;
+}
+
+.mobile .help-inf {
+    bottom: calc(21.6vh / var(--ph));
+    font-size: clamp(0.04vw, calc(8.7vh / var(--ph)), 1.64vw);
 }
 
 .hand {
@@ -429,6 +438,12 @@ color: #767171;
     height: clamp(0.05vw, 24.72vh, 13.9vw);
     z-index: 111;
 }
+.mobile .logo-bottom { 
+    right: clamp(0.05vw, calc(11vh / var(--ph)), 0.85vw);
+    bottom: clamp(0.05vw, calc(11vh / var(--ph)), 0.85vw);
+    width: clamp(0.05vw, calc(174vh / var(--ph)), 13.59vw);
+    height: clamp(0.05vw, calc(177vh / var(--ph)), 13.9vw); 
+}
 .logo-bottom-neov {
     background-image: url(../images/logo-bottom-right-neov.png);
 }
@@ -443,6 +458,12 @@ color: #767171;
     width: clamp(0.05vw, 24.16vh, 13.59vw);
     height: clamp(0.05vw, 24.72vh, 13.9vw);
     z-index: 111;
+}
+.mobile .logo-top {
+    right: clamp(0.05vw, calc(22vh / var(--ph)), 0.85vw);
+    bottom: clamp(0.05vw, calc(22vh / var(--ph)), 0.85vw);
+    width: clamp(0.05vw, calc(174vh / var(--ph)), 13.59vw);
+    height: clamp(0.05vw, calc(177vh / var(--ph)), 13.9vw); 
 }
 .logo-top-neov {
     background-image: url(../images/logo-top-left-neov.png);
