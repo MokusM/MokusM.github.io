@@ -35,7 +35,7 @@ $(document).ready(function () {
 		return results == null ? null : results[1];
 	}
 
-	var url = 'slides/slide24.html';
+	var url = 'slides/slide1.html';
 	if (gup('slide')) {
 		url = 'slides/slide' + gup('slide') + '.html';
 	}
