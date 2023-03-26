@@ -218,6 +218,12 @@ body {
     font-size: clamp(1px, 0.925925vh, 0.520833vw);
 }
 
+@media screen and (max-width: 1024px) {
+    #pinContainer {
+        font-size: clamp(1px, 0.7407407vh, 0.417vw);
+    }    
+}
+
 #slideContainer {
     width: 100%;
     height: 100%;
