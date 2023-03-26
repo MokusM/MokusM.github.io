@@ -1,0 +1,236 @@
+<div class="logo-top logo"></div>
+<div class="logo-bottom logo"></div>
+<section class="panel autoload" data-count="10" data-next="slide11" data-prev="slide9">
+	<div class="containerBlock">
+		<div class="slide slide-10">
+			<img class="vichy-logo" src="images/vichy-logo-black.png" alt="" />
+			<div class="header">
+				<div class="header__title"><span>ОСТАННІЙ КРОК </span></div>
+				<div class="header__sub-title">
+					<span>ДЛЯ БУДЬ-ЯКОЇ РУТИНИ ДОГЛЯДУ </span>
+					<div class="sub">ПЕРЕД НАНЕСЕННЯМ МАКІЯЖУ</div>
+				</div>
+			</div>
+
+			<div class="list">
+				<div class="list__item">
+					<div class="list__card">
+						<div class="list__top">
+							<div class="list__number">№1</div>
+							<div class="list__type">ГЕЛЬ-БУСТЕР</div>
+						</div>
+						<div class="list__img list__img--1">
+							<img src="images/sl10-img-1.png" alt="" />
+						</div>
+					</div>
+					<div class="list__title">
+						<span
+							>ЗВОЛОЖЕННЯ<br />
+							ТА ЗМІЦНЕННЯ ЗАХИСНОГО БАР’ЄРУ
+						</span>
+					</div>
+				</div>
+				<div class="list__item">
+					<div class="list__card">
+						<div class="list__top">
+							<div class="list__number">№2</div>
+							<div class="list__type">СИРОВАТКА</div>
+						</div>
+						<div class="list__img list__img--2">
+							<img src="images/sl10-img-2.png" alt="" />
+						</div>
+					</div>
+					<div class="list__title">
+						<span
+							>ДОДАТКОВИЙ ДОГЛЯД<br />
+							В ЩОДЕННІЙ РУТИНІ
+						</span>
+					</div>
+				</div>
+				<div class="list__item">
+					<div class="list__card">
+						<div class="list__top">
+							<div class="list__number">№3</div>
+							<div class="list__type">КРЕМ</div>
+						</div>
+						<div class="list__img list__img--3">
+							<img src="images/sl10-img-3.jpg" alt="" />
+						</div>
+					</div>
+					<div class="list__title">
+						<span
+							>ОСНОВНИЙ ДОГЛЯД ЗА ОБЛИЧЧЯМ<br />
+							(ЗА ПОТРЕБОЮ ШКІРИ)
+						</span>
+					</div>
+				</div>
+				<div class="list__item">
+					<div class="list__card">
+						<div class="list__top">
+							<div class="list__number">№4</div>
+							<div class="list__type">СПФ 50+</div>
+						</div>
+						<div class="list__img list__img--4">
+							<img src="images/sl10-img-4.png" alt="" />
+						</div>
+					</div>
+					<div class="list__title">
+						<span
+							>ЗАХИСТ ШКІРИ<br />
+							ВІД ФОТОСТАРІННЯ
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<style>
+	section {
+		opacity: 0;
+	}
+	.prev {
+		display: none;
+	}
+	.next {
+		display: none;
+	}
+	.mainSlide {
+		height: 100%;
+	}
+	.slide-10 {
+		padding-top: 12.5em;
+		padding-right: 5em;
+	}
+	.header {
+		margin-bottom: 10.3em;
+	}
+	.header__title span {
+		font-size: 18.7em;
+	}
+	.header__sub-title {
+		margin-top: -3.9em;
+		padding-left: 52em;
+		display: inline-block;
+	}
+	.header__sub-title .sub {
+		font-weight: 700;
+		font-size: 2.7em;
+		line-height: 2.2;
+		color: #7f7f7f;
+		text-align: right;
+	}
+	.list {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		width: 165.5em;
+	}
+	.list__item {
+		width: 25%;
+		position: relative;
+	}
+	.list__item:not(:last-child):before {
+		content: '';
+		position: absolute;
+		top: 1.7em;
+		right: -1px;
+		height: calc(100% - 10.7em);
+		width: 0.3em;
+		background: #fcc0a5;
+	}
+	.list__card {
+		position: relative;
+		text-align: center;
+		height: 36.6em;
+		width: 100%;
+		margin-bottom: 2.8em;
+	}
+	.list__card::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		transform: translateX(-50%);
+		width: calc(100% - 1.7em);
+		height: 0.3em;
+		background: #fcc0a5;
+	}
+	.list__card::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		transform: translateX(-50%);
+		width: calc(100% - 1.7em);
+		height: 0.3em;
+		background: #fcc0a5;
+	}
+	.list__top {
+		background: #fff;
+		position: absolute;
+		top: -6.9em;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		transform: translateX(-50%);
+		padding: 0 0.8em;
+	}
+	.list__number {
+		font-weight: 700;
+		font-size: 6.8em;
+		color: #7f7f7f;
+	}
+	.list__type {
+		font-weight: 700;
+		font-size: 2.7em;
+		color: #7f7f7f;
+	}
+	.list__img {
+		position: absolute;
+		left: 50%;
+		top: 63%;
+		-webkit-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+	}
+	.list__img--1 {
+		top: 56%;
+		width: 28em;
+	}
+	.list__img--2 {
+		width: 23.6em;
+	}
+	.list__img--3 {
+		width: 20.6em;
+	}
+	.list__img--4 {
+		top: 68%;
+		width: 22.5em;
+	}
+	.list__title {
+		text-align: center;
+	}
+	.list__title span {
+		font-weight: 700;
+		font-size: 1.9em;
+		color: #7f7f7f;
+	}
+</style>
+<script>
+	TweenMax.to('section', 0.5, { opacity: 1, ease: Linear.easeNone });
+	var tl = new TimelineMax({ paused: true, onComplete: () => show_arrow_next_slide() });
+	tl.from('.header__title', 1, { opacity: 0, ease: Linear.easeNone })
+		.from('.header__sub-title', 1, { opacity: 0, ease: Linear.easeNone })
+		.from('.list__item:nth-child(1)', 1, { opacity: 0, left: '+=30', ease: Linear.easeNone })
+		.from('.list__item:nth-child(2)', 1, { opacity: 0, left: '+=30', ease: Linear.easeNone })
+		.from('.list__item:nth-child(3)', 1, { opacity: 0, left: '+=30', ease: Linear.easeNone })
+		.from('.list__item:nth-child(4)', 1, { opacity: 0, left: '+=30', ease: Linear.easeNone });
+	tl.play();
+	function show_arrow_next_slide() {
+		setTimeout(function () {
+			$('.prev').show('slow');
+			$('.next').show('slow');
+		}, 2000);
+	}
+</script>

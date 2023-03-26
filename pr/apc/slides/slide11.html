@@ -1,0 +1,97 @@
+<div class="logo-top logo-top-1-white logo"></div>
+<div class="logo-bottom logo-bottom-1 logo"></div>
+<section class="panel autoload" data-count="11" data-next="slide12" data-prev="slide10">
+	<div class="containerBlock">
+		<div class="slide slide-11">
+			<img class="vichy-logo" src="images/vichy-logo-dark.png" alt="" />
+			<div class="text"><span>ЩОДЕННИЙ ДОГЛЯД ДЛЯ ШКІРИ, СХИЛЬНОЇ ДО ПРОЯВІВ ПІГМЕНТАЦІЇ</span></div>
+			<div class="bottom-right">
+				<div class="title-lg"><span>SPECIALIST</span></div>
+			</div>
+			<div class="top-left">
+				<img class="pack-2" src="images/sl11-pack-2.png" alt="" />
+				<img class="pack-1" src="images/sl11-pack-1.png" alt="" />
+				<div class="title-lg"><span>LIFTACTIV</span></div>
+			</div>
+		</div>
+	</div>
+</section>
+<style>
+	section {
+		opacity: 0;
+	}
+	.prev {
+		display: none;
+	}
+	.next {
+		display: none;
+	}
+	.mainSlide {
+		height: 100%;
+	}
+	.text {
+		border-left: 2.2em solid #c00000;
+		position: absolute;
+		top: 22em;
+		right: 10em;
+		width: 25em;
+		padding-left: 3.12em;
+	}
+	.text span {
+		font-weight: 700;
+		font-size: 3.2em;
+		color: #000;
+	}
+	.pack-1 {
+		width: 75em;
+		margin: 0 10em -8em auto;
+	}
+	.pack-2 {
+		width: 28.7em;
+		position: absolute;
+		left: calc(100% + 6.2em);
+		top: 10em;
+	}
+	.title-lg span {
+		font-weight: 700;
+		font-size: 18.7em;
+		color: #fff;
+	}
+	.bottom-right {
+		position: absolute;
+		top: 54.4em;
+		left: 70.3em;
+		width: calc(100vw - 70.3em);
+		height: calc(100% - 54.4em);
+		background: #e1e1e6;
+		padding: 18.9em 0 0 3.5%;
+	}
+	.bottom-right .title-lg span {
+		color: #000;
+	}
+	.top-left {
+		position: absolute;
+		top: 0;
+		right: 84.7em;
+		width: calc(100vw - 84.7em);
+		height: 73.1em;
+		background: #c00000;
+		padding: 13.3em 0 0 7%;
+	}
+	.top-left .title-lg {
+		text-align: right;
+		padding-right: 6.5em;
+	}
+</style>
+<script>
+	TweenMax.to('section', 0.5, { opacity: 1, ease: Linear.easeNone });
+	var tl = new TimelineMax({ paused: true, onComplete: () => show_arrow_next_slide() });
+	tl.from('.top-left .title-lg', 1, { opacity: 0, ease: Linear.easeNone }).from('.bottom-right .title-lg', 1, { opacity: 0, ease: Linear.easeNone });
+	tl.play();
+	function show_arrow_next_slide() {
+		setTimeout(function () {
+			$('.prev').show('slow');
+			$('.next').show('slow');
+		}, 2000);
+	}
+</script>

@@ -1,0 +1,111 @@
+<div class="logo-top logo-top-1-white logo"></div>
+<div class="logo-bottom logo-bottom-1 logo"></div>
+<section class="panel autoload" data-count="15" data-next="slide16" data-prev="slide14">
+	<div class="containerBlock">
+		<div class="slide slide-15">
+			<img class="vichy-logo" src="images/vichy-logo-dark.png" alt="" />
+			<img class="sl15-cupl" src="images/sl15-cupl.jpg" alt="" />
+			<div class="text">
+				<span
+					>ЛІФТАКТИВ СПЕЦІАЛІСТ В3, АНТИВІКОВА СИРОВАТКА<br />
+					ВІД ПІГМЕНТНИХ ПЛЯМ І ЗМОРЩОК
+				</span>
+			</div>
+			<div class="bottom-right"></div>
+			<div class="top-left">
+				<img class="pack-1" src="images/sl15-pack-1.png" alt="" />
+				<div class="title-lg"><span>LIFTACTIV</span><small>SPECIALIST B3</small></div>
+			</div>
+		</div>
+	</div>
+</section>
+<style>
+	section {
+		opacity: 0;
+	}
+	.prev {
+		display: none;
+	}
+	.next {
+		display: none;
+	}
+	.mainSlide {
+		height: 100%;
+	}
+	.slide-15 {
+		overflow: visible;
+	}
+	.text {
+		border-left: 2.2em solid #c00000;
+		position: absolute;
+		top: 22em;
+		right: 11em;
+		width: 36em;
+		height: 24em;
+		padding-left: 3.12em;
+	}
+	.text span {
+		font-weight: 700;
+		font-size: 3.3em;
+		color: #000;
+	}
+	.pack-1 {
+		width: 42.5em;
+		position: absolute;
+		left: calc(100% - 21em);
+		top: 7em;
+	}
+	.title-lg {
+		text-align: center;
+	}
+	.title-lg span {
+		font-weight: 700;
+		font-size: 18.7em;
+		color: #fff;
+		display: block;
+		text-align: center;
+	}
+	.title-lg small {
+		display: block;
+		font-weight: 700;
+		font-size: 13.3em;
+		color: #fff;
+	}
+	.bottom-right {
+		position: absolute;
+		top: 57.6em;
+		left: 92.5em;
+		width: calc(100vw - 92.5em);
+		height: calc(100% - 57.6em);
+		background: #e1e1e6;
+	}
+	.top-left {
+		position: absolute;
+		top: 0;
+		right: 67.7em;
+		width: calc(100vw - 67.7em);
+		height: 66.1em;
+		background: #c00000;
+		padding: 15.6em;
+	}
+	.sl15-cupl {
+		position: absolute;
+		width: 78em;
+		top: 51.2em;
+		left: 14.6em;
+	}
+</style>
+<script>
+	TweenMax.to('section', 0.5, { opacity: 1, ease: Linear.easeNone });
+	var tl = new TimelineMax({ paused: true, onComplete: () => show_arrow_next_slide() });
+
+	tl.from('.text', 1, { height: 0, ease: Linear.easeNone });
+	tl.from('.text span', 1, { opacity: 0, ease: Linear.easeNone });
+	tl.play();
+	function show_arrow_next_slide() {
+		setTimeout(function () {
+			$('.prev').show('slow');
+			$('.next').show('slow');
+		}, 2000);
+	}
+</script>

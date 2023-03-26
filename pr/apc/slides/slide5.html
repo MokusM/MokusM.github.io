@@ -1,0 +1,162 @@
+<div class="logo-top logo"></div>
+<div class="logo-bottom logo"></div>
+<section class="panel autoload" data-count="5" data-next="slide6" data-prev="slide4">
+	<div class="containerBlock">
+		<div class="slide slide-5">
+			<img class="vichy-logo" src="images/vichy-logo-black.png" alt="" />
+			<div class="header">
+				<div class="header__title"><span>ЩОДЕННИЙ</span></div>
+				<div class="header__sub-title">
+					<span>ФОТОЗАХИСТ ДЛЯ БОРОТЬБИ<br /> </span><span>З ФОТОСТАРІННЯМ ШКІРИ </span>
+				</div>
+			</div>
+			<img class="sl5-pack" src="images/sl5-pack-1.png" alt="" />
+			<div class="list">
+				<div class="list__item">
+					<div class="list__count">
+						<span>1</span>
+					</div>
+					<div class="list__text">
+						<span
+							><b>ЗАХИЩАЄ</b> СПФ 50+<br />
+							UVA PF 46<br />
+							PA++++</span
+						>
+					</div>
+				</div>
+				<div class="list__item">
+					<div class="list__count">
+						<span>2</span>
+					</div>
+					<div class="list__text">
+						<span
+							><b>КОРЕГУЄ </b>
+							ЗМОРШКИ ПІГМЕНТАЦІЮ
+						</span>
+					</div>
+				</div>
+				<div class="list__border list__border--1"></div>
+				<div class="list__border list__border--2"></div>
+			</div>
+		</div>
+	</div>
+</section>
+<style>
+	section {
+		opacity: 0;
+	}
+	.prev {
+		display: none;
+	}
+	.next {
+		display: none;
+	}
+	.mainSlide {
+		height: 100%;
+	}
+	.slide-5 {
+		padding-top: 12.2em;
+		padding-right: 10em;
+	}
+	.header__title span {
+		font-size: 18.7em;
+	}
+	.header__sub-title {
+		margin-top: -4.9em;
+		padding-left: 67.3em;
+	}
+	.header__sub-title span {
+		line-height: 1.15;
+	}
+	.sl5-pack {
+		position: absolute;
+		width: 66.3em;
+		left: 9.5em;
+		top: 35.1em;
+	}
+	.list {
+		width: 91.7em;
+		position: absolute;
+		left: 81.5em;
+		bottom: 20.1em;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+	.list__item {
+		width: 50%;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: start;
+		-ms-flex-align: start;
+		align-items: flex-start;
+	}
+	.list__item:nth-child(1) {
+		margin-left: -3.1em;
+		margin-right: 2.5em;
+	}
+	.list__item:nth-child(1) .list__text {
+		padding-left: 0;
+	}
+	.list__count span {
+		font-weight: 400;
+		font-size: 26.7em;
+		line-height: 0.7;
+		color: #fcc0a5;
+	}
+	.list__text {
+		padding-left: 2.5em;
+		-webkit-box-flex: 1;
+		-ms-flex: 1;
+		flex: 1;
+	}
+	.list__text b {
+		display: block;
+		font-weight: 700;
+	}
+	.list__text span {
+		font-weight: 400;
+		font-size: 4.3em;
+		color: #fcc0a5;
+	}
+	.list__border {
+		width: 50%;
+		height: 6.9em;
+		margin-top: 5.7em;
+		position: relative;
+	}
+	.list__border::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	.list__border--1:before {
+		background: #7f7f7f;
+	}
+	.list__border--2:before {
+		background: #fcc0a5;
+	}
+</style>
+<script>
+	TweenMax.to('section', 0.5, { opacity: 1, ease: Linear.easeNone });
+	var tl = new TimelineMax({ paused: true, onComplete: () => show_arrow_next_slide() });
+
+	tl.from('.list__border--1', 1, { width: 0, duration: 0.5, ease: Linear.easeNone })
+		.from('.list__item:nth-child(1)', 1, { opacity: 0, duration: 0.2, ease: Linear.easeNone })
+		.from('.list__border--2', 1, { width: 0, duration: 0.5, ease: Linear.easeNone })
+		.from('.list__item:nth-child(2)', 1, { opacity: 0, duration: 0.2, ease: Linear.easeNone });
+
+	tl.play();
+	function show_arrow_next_slide() {
+		setTimeout(function () {
+			$('.prev').show('slow');
+			$('.next').show('slow');
+		}, 2000);
+	}
+</script>

@@ -1,0 +1,131 @@
+<div class="logo-top logo logo-top-neov"></div>
+<div class="logo-bottom logo logo-bottom-neov"></div>
+<section class="panel autoload" data-count="8" data-next="slide9" data-prev="slide7">
+	<div class="containerBlock">
+		<div class="slide slide-8">
+			<img class="vichy-logo" src="images/vichy-logo-black.png" alt="" />
+			<div class="header">
+				<div class="header__title"><span>ТЕКСТУРА </span></div>
+				<div class="header__sub-title"><span>НЕВИДИМА ТА УЛЬТРАЛЕГКА </span></div>
+			</div>
+			<ul class="perceng-list">
+				<li class="perceng-list__item">
+					<div class="perceng-list__count">
+						<span class="count" data-from="0" data-to="90">0</span>
+						<span>%</span>
+					</div>
+					<div class="perceng-list__text">
+						<span
+							>НЕВИДИМЕ ФІНІШНЕ<br />
+							ПОКРИТТЯ НА ШКІРІ
+						</span>
+					</div>
+				</li>
+				<li class="perceng-list__item">
+					<div class="perceng-list__count">
+						<span class="count" data-from="0" data-to="100">0</span>
+						<span>%</span>
+					</div>
+					<div class="perceng-list__text"><span>НЕ СКОЧУЄТЬСЯ </span></div>
+				</li>
+				<li class="perceng-list__item">
+					<div class="perceng-list__count">
+						<span class="count" data-from="0" data-to="83">0</span>
+						<span>%</span>
+					</div>
+					<div class="perceng-list__text">
+						<span
+							>НЕ ЗАЛИШАЄ ЛИПКОГО<br />
+							ВІДЧУТТЯ НА ШКІРІ
+						</span>
+					</div>
+				</li>
+				<li class="perceng-list__item">
+					<div class="perceng-list__count">
+						<span class="count" data-from="0" data-to="83">0</span>
+						<span>%</span>
+					</div>
+					<div class="perceng-list__text"><span>НЕ ЗАЛИШАЄ БЛИСКУ НА ШКІРІ </span></div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+<style>
+	section {
+		opacity: 0;
+	}
+	.prev {
+		display: none;
+	}
+	.next {
+		display: none;
+	}
+	.mainSlide {
+		height: 100%;
+	}
+	.slide-8 {
+		background-image: url('images/sl8-bg.jpg');
+		background-size: auto 108em;
+		background-repeat: no-repeat;
+		background-position: right bottom;
+		padding-top: 12.5em;
+	}
+	.header {
+		margin-bottom: 6.7em;
+	}
+	.header__title span {
+		font-size: 18.7em;
+	}
+	.header__sub-title {
+		margin-top: -3.5em;
+		padding-left: 30em;
+	}
+	.perceng-list {
+		margin-left: -3.4em;
+	}
+	.perceng-list__item {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+	.perceng-list__count {
+		width: 29em;
+		text-align: right;
+	}
+	.perceng-list__count span {
+		font-weight: 400;
+		font-size: 12.5em;
+		line-height: 1.05;
+		color: #fcc0a5;
+	}
+	.perceng-list__count span + span {
+		font-size: 9.6em;
+	}
+	.perceng-list__text {
+		padding-left: 4.9em;
+		padding-top: 1.7em;
+	}
+	.perceng-list__text span {
+		font-weight: 700;
+		font-size: 3.2em;
+		color: #7f7f7f;
+	}
+</style>
+<script>
+	TweenMax.to('section', 0.5, { opacity: 1, ease: Linear.easeNone });
+	var tl = new TimelineMax({ paused: true, onComplete: () => show_arrow_next_slide() });
+	tl.play();
+	function show_arrow_next_slide() {
+		setTimeout(function () {
+			$('.count').countTo();
+		}, 700);
+		setTimeout(function () {
+			$('.prev').show('slow');
+			$('.next').show('slow');
+		}, 2700);
+	}
+</script>

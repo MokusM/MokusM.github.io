@@ -1,0 +1,232 @@
+<div class="logo-top logo-top-1-white logo"></div>
+<div class="logo-bottom logo-bottom-1-white logo"></div>
+<section class="panel autoload" data-count="12" data-next="slide13" data-prev="slide11">
+	<div class="containerBlock">
+		<div class="slide slide-12">
+			<img class="vichy-logo" src="images/vichy-logo-dark.png" alt="" />
+			<div class="sl12-img"></div>
+			<div class="text-lg">
+				<b>ПОРУШЕННЯ ПІГМЕНТАЦІЇ</b>
+				<span>ШКІРИ</span>
+			</div>
+			<div class="content">
+				<div class="content__item">
+					<div class="content__title"><span>ОЗНАКИ: </span></div>
+					<div class="content__list">
+						<ul class="content-list content-list--1">
+							<li><b>Нерівний колір шкіри</b><span>гіперпігментован ділянки</span></li>
+							<li><b>Тьмяне обличчя </b><span>відсутність сяйва</span></li>
+						</ul>
+					</div>
+				</div>
+				<div class="content__item">
+					<div class="content__title"><span>ЛОКАЛІЗАЦІЯ: </span></div>
+					<div class="content__list content-list--2">
+						<ul class="content-list">
+							<li><b> Обличчя & Шия</b></li>
+						</ul>
+					</div>
+				</div>
+				<div class="content__item">
+					<div class="content__title">
+						<span
+							>ОСНОВНІ<br />
+							ПРИЧИНИ:
+						</span>
+					</div>
+					<div class="content__list">
+						<ul class="content-list content-list--3">
+							<li><b>УФ-промені </b></li>
+							<li><b>Зміни гормонального фону </b></li>
+							<li><b>Біологічне старіння </b></li>
+							<li><b>Стрес</b></li>
+							<li><b>Втома</b></li>
+							<li><b>Куріння</b></li>
+							<li><b>Дієта</b></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<style>
+	section {
+		opacity: 0;
+	}
+	.prev {
+		display: none;
+	}
+	.next {
+		display: none;
+	}
+	.mainSlide {
+		height: 100%;
+	}
+	.slide-12 {
+		overflow: visible;
+	}
+	.sl12-img {
+		position: absolute;
+		right: 64.4em;
+		top: 0;
+		width: calc(100% - 64.4em);
+		height: 47.6em;
+	}
+	.sl12-img::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 100vw;
+		height: 100%;
+		background: #e1e1e6;
+	}
+	.sl12-img::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: url('images/sl12-img.jpg');
+		background-size: cover;
+		background-position: right center;
+	}
+	.text-lg {
+		position: absolute;
+		left: 12.9em;
+		width: 60em;
+		top: 56.2em;
+	}
+	.content {
+		padding: 5.7em 5em 0 11.7em;
+		position: absolute;
+		top: 28.5em;
+		left: 82.7em;
+		width: calc(100vw - 82.7em);
+		height: calc(100% - 28.5em);
+		background: #c00000;
+	}
+	.content::before {
+		content: '';
+		position: absolute;
+		top: -18.8em;
+		right: calc(100% - 6.8em);
+		width: 51.8em;
+		height: 98.1em;
+		background-image: url(images/sl12-line.png);
+		background-size: contain;
+	}
+	.content__item {
+		position: relative;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		margin-bottom: 4.2em;
+		max-width: 92.6em;
+	}
+	.content__item::before {
+		content: '';
+		position: absolute;
+		top: 1.2em;
+		left: -7em;
+		width: 3.4em;
+		height: 3.4em;
+		background: #fff;
+		border-radius: 50%;
+	}
+	.content__title {
+		width: 39.5%;
+	}
+	.content__title span {
+		font-weight: 700;
+		font-size: 4.3em;
+		color: #fff;
+	}
+	.content__list {
+		width: 60.5%;
+	}
+	.content-list {
+		margin-top: -0.5em;
+	}
+	.content-list--2 {
+		margin-top: 0;
+		padding-top: 0.5em;
+	}
+	.content-list li {
+		color: #fff;
+		position: relative;
+		margin-bottom: 1.5em;
+	}
+	.content-list li::before {
+		content: '•';
+		position: absolute;
+		top: 0.2em;
+		left: -1.5em;
+		font-size: 2.7em;
+	}
+	.content-list li b {
+		font-weight: 700;
+		font-size: 3.9em;
+		display: block;
+	}
+	.content-list li span {
+		font-weight: 400;
+		font-size: 3.4em;
+	}
+	.content-list--3 {
+		margin-top: 0.2em;
+	}
+	.content-list--3 li {
+		margin-bottom: 0.8em;
+	}
+	.content-list--3 li b {
+		font-size: 3.2em;
+	}
+</style>
+<script>
+	TweenMax.to('section', 0.5, { opacity: 1, ease: Linear.easeNone });
+	var tl = new TimelineMax({ paused: true, onComplete: () => show_arrow_next_slide() });
+
+	tl.from('.content__item:nth-child(1)', 0.6, { opacity: 0, ease: Linear.easeNone })
+		.from('.content__item:nth-child(1) .content__title', 1, { opacity: 0, ease: Linear.easeNone })
+		.staggerFrom(
+			'.content__item:nth-child(1) li',
+			0.5,
+			{
+				autoAlpha: 0,
+				top: '+=50',
+			},
+			0.5
+		)
+		.from('.content__item:nth-child(2)', 0.6, { opacity: 0, ease: Linear.easeNone })
+		.from('.content__item:nth-child(2) .content__title', 1, { opacity: 0, ease: Linear.easeNone })
+		.staggerFrom(
+			'.content__item:nth-child(2) li',
+			0.5,
+			{
+				autoAlpha: 0,
+				top: '+=50',
+			},
+			0.5
+		)
+		.from('.content__item:nth-child(3)', 0.6, { opacity: 0, ease: Linear.easeNone })
+		.from('.content__item:nth-child(3) .content__title', 1, { opacity: 0, ease: Linear.easeNone })
+		.staggerFrom(
+			'.content__item:nth-child(3) li',
+			0.5,
+			{
+				autoAlpha: 0,
+				top: '+=50',
+			},
+			0.5
+		);
+	tl.play();
+	function show_arrow_next_slide() {
+		setTimeout(function () {
+			$('.prev').show('slow');
+			$('.next').show('slow');
+		}, 2000);
+	}
+</script>
