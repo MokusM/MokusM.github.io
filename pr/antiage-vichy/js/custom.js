@@ -2,12 +2,12 @@ const mobileCheck = () => {
 	const userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
 	if (/android/i.test(userAgent)) {
-		//document.documentElement.classList.add('mobile');
+		document.documentElement.classList.add('mobile');
 		return 'Android';
 	}
 
 	if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-		//document.documentElement.classList.add('mobile');
+		document.documentElement.classList.add('mobile');
 		return 'iOS';
 	}
 
@@ -35,7 +35,7 @@ $(document).ready(function () {
 		return results == null ? null : results[1];
 	}
 
-	var currenSlide = 12;
+	var currenSlide = 1;
 
 	// $('head').append('<link rel="stylesheet" href="slide-' + currenSlide + '.css" type="text/css" />');
 
