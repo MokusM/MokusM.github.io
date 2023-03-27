@@ -35,7 +35,7 @@ $(document).ready(function () {
 		return results == null ? null : results[1];
 	}
 
-	var currenSlide = 1;
+	var currenSlide = 6;
 
 	// $('head').append('<link rel="stylesheet" href="slide-' + currenSlide + '.css" type="text/css" />');
 
