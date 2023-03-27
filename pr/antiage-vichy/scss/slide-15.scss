@@ -1,0 +1,156 @@
+section {
+	opacity: 0;
+}
+.prev {
+	display: none;
+}
+.next {
+	display: none;
+}
+.mainSlide {
+	height: 100%;
+}
+.slide-24 {
+	overflow: visible;
+	padding: 0;
+}
+.conten-list {
+	width: 135.7em;
+	height: 63.5em;
+	position: relative;
+	padding: 7.5em 0 0 10.4em;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 100vw;
+		height: 100%;
+		background: #c00000;
+	}
+}
+.list {
+	display: flex;
+	position: relative;
+	max-width: 116.9em;
+
+	&__item {
+		text-align: center;
+		padding: 0 0.7em;
+		width: 33.3%;
+		&:nth-child(1) {
+			width: 66.6%;
+			.list__text {
+				padding: 0 2em;
+			}
+			.list__img {
+				margin-left: 5em;
+				margin-right: 5em;
+			}
+		}
+	}
+
+	&__title {
+		margin-bottom: 2.8em;
+		height: 11.7em;
+		display: flex;
+		align-items: flex-end;
+		position: relative;
+		span {
+			font-weight: 700;
+			font-size: 3.2em;
+			color: #ffffff;
+			width: 100%;
+		}
+	}
+	&__img {
+		display: inline-flex;
+		position: relative;
+		background: #fff;
+		border-radius: 50%;
+		width: 21em;
+		height: 21em;
+		margin: 0 auto 2.4em;
+	}
+
+	&__text {
+		position: relative;
+		span {
+			font-weight: 700;
+			font-size: 1.9em;
+			color: #ffffff;
+		}
+	}
+}
+.text-lg {
+	position: absolute;
+	top: 71.8em;
+	left: 12.5em;
+	width: 110em;
+	padding-left: 3em;
+	line-height: 1;
+	&__item {
+		margin-bottom: 0.8em;
+		&:nth-child(1) {
+			margin-bottom: 0.9em;
+		}
+		&:nth-child(3) {
+			margin-bottom: 2.9em;
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	b {
+		font-size: 6.4em;
+	}
+	span {
+		font-size: 4.8em;
+		font-weight: 700;
+	}
+	div div {
+		font-weight: 700;
+		font-size: 4.3em;
+		color: #c00000;
+	}
+}
+
+.sl24-pack {
+	position: absolute;
+	top: 41.1em;
+	left: 120.3em;
+	width: 56.6em;
+}
+
+.note {
+	left: 106.7em;
+	bottom: 6em;
+	span {
+		font-weight: 400;
+		font-size: 1.3;
+		color: #000000;
+	}
+}
+
+.text {
+	border-left: 2.2em solid #c00000;
+	position: absolute;
+	top: 22em;
+	right: 8em;
+	width: 40em;
+	padding-left: 2.4em;
+
+	span {
+		font-weight: 700;
+		font-size: 3.2em;
+		color: #000000;
+	}
+}
+.gray-bg {
+	position: absolute;
+	background: #e1e1e6;
+	top: 69.8em;
+	height: calc(100% - 69.8em);
+	left: 143.9em;
+	width: 100vw;
+}

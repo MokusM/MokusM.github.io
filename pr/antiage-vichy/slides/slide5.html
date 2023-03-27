@@ -1,0 +1,126 @@
+<div class="logo-top logo-top-1-white logo"></div>
+<div class="logo-bottom logo-bottom-1-white logo"></div>
+<section class="panel autoload" data-count="5" data-next="slide6" data-prev="slide4">
+	<div class="containerBlock">
+		<div class="slide slide-14">
+			<img class="vichy-logo" src="images/vichy-logo-dark.png" alt="" />
+			<div class="sl13-img"></div>
+			<div class="text-lg">
+				<b>РІЗНОВИДИ </b>
+				<span>ГІПЕРПІГМЕНТАЦІЇ ШКІРИ</span>
+			</div>
+			<div class="title"><span>ЗА МЕХАНІЗМОМ ВИНИКНЕННЯ РОЗРІЗНЯЮТЬ:</span></div>
+			<div class="content">
+				<div class="content__item"><b>МЕЛАНОЦИТАРНІ –</b><span> пігментація виникає за рахунок збільшення кількості клітин меланоцитів. </span></div>
+				<div class="content__item">
+					<b>МЕЛАНІНОВІ –</b><span> пігментація зумовлена збільшенням вироблення та накопичення меланіну або зниженням швидкості оновлення рогового шару епідермісу. </span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<style>
+	section {
+		opacity: 0;
+	}
+	.prev {
+		display: none;
+	}
+	.next {
+		display: none;
+	}
+	.mainSlide {
+		height: 100%;
+	}
+	.slide-14 {
+		overflow: visible;
+	}
+	.text-lg {
+		position: absolute;
+		top: 16.6em;
+		left: 97.6em;
+		width: 75em;
+		padding-left: 4.5em;
+	}
+	.sl13-img {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 85.5em;
+		height: 70.7em;
+	}
+	.sl13-img::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 100vw;
+		height: 100%;
+		background: #e1e1e6;
+	}
+	.sl13-img::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: url(images/sl13-img.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.title {
+		position: absolute;
+		top: 78.5em;
+		left: 13.3em;
+		width: 60em;
+	}
+	.title span {
+		font-weight: 700;
+		font-size: 4.3em;
+		color: #000;
+	}
+	.content {
+		position: absolute;
+		top: 58.6em;
+		left: 78em;
+		width: calc(100vw - 78em);
+		height: calc(100% - 58.6em);
+		background: #c00000;
+		padding: 6.6em 0 0 8em;
+	}
+	.content__item {
+		color: #fff;
+		margin-bottom: 3.5em;
+		max-width: 94em;
+		position: relative;
+	}
+	.content__item b {
+		font-weight: 700;
+		font-size: 4.3em;
+	}
+	.content__item span {
+		font-weight: 400;
+		font-size: 3.7em;
+	}
+</style>
+<script>
+	TweenMax.to('section', 0.5, { opacity: 1, ease: Linear.easeNone });
+	var tl = new TimelineMax({ paused: true, onComplete: () => show_arrow_next_slide() });
+	tl.staggerFrom(
+		'.content__item',
+		0.8,
+		{
+			autoAlpha: 0,
+			top: '+=50',
+		},
+		0.8
+	);
+	tl.play();
+	function show_arrow_next_slide() {
+		setTimeout(function () {
+			$('.prev').show('slow');
+			$('.next').show('slow');
+		}, 2000);
+	}
+</script>

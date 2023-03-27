@@ -1,0 +1,172 @@
+section {
+	opacity: 0;
+}
+.prev {
+	display: none;
+}
+.next {
+	display: none;
+}
+.mainSlide {
+	height: 100%;
+}
+.slide-21 {
+	overflow: visible;
+}
+
+.right-bg {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	left: 68.2em;
+	width: 100vw;
+	background: #c00000;
+}
+.text {
+	position: absolute;
+	top: 25.2em;
+	left: 17.2em;
+	width: 45em;
+	padding-left: 6.5em;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 2.2em;
+		height: 100%;
+		background: #c00000;
+	}
+
+	span {
+		font-weight: 700;
+		font-size: 3.3em;
+		color: #c00000;
+	}
+	span + span {
+		color: #000;
+		display: block;
+	}
+}
+.content-items {
+	position: absolute;
+	left: 0;
+	top: 57em;
+	width: 173.5em;
+	display: flex;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 100vw;
+		background: #e1e1e6;
+		height: 100%;
+	}
+}
+.item {
+	position: relative;
+
+	&--1 {
+		padding: 4.5em 10em 6.4em 10em;
+		text-align: right;
+		.item__top {
+			margin-right: -1.6em;
+		}
+	}
+	&--2 {
+		padding: 4.5em 10em 6.4em 64em;
+	}
+	&__top {
+		display: flex;
+		margin-bottom: 1.6em;
+	}
+
+	&__col {
+		flex: 1;
+		padding-right: 2em;
+		span {
+			font-weight: 400;
+			font-size: 3.7em;
+			color: #000000;
+		}
+
+		b {
+			display: block;
+			font-weight: 700;
+			font-size: 3.7em;
+			color: #000000;
+		}
+	}
+
+	&__count {
+		& + .item__col {
+			padding: 0 0 0 2em;
+		}
+		span {
+			font-weight: 700;
+			font-size: 9.6em;
+			line-height: 0.88;
+			color: #000000;
+		}
+	}
+
+	&__text {
+		width: 40em;
+		span {
+			font-weight: 700;
+			font-size: 2.1em;
+			color: #000000;
+		}
+	}
+}
+.note {
+	color: #ffffff;
+	bottom: 5.7em;
+	left: 70em;
+	span {
+		font-size: 2.4em;
+	}
+}
+.sl21-pack-1 {
+	position: absolute;
+	top: 18.1em;
+	left: 53.3em;
+	width: 29.9em;
+}
+.sl21-pack-2 {
+	position: absolute;
+	top: 42.8em;
+	left: 78.4em;
+	width: 42.5em;
+}
+
+.title {
+	position: absolute;
+	top: 13.4em;
+	left: 84.5em;
+	width: 82em;
+	span {
+		font-weight: 700;
+		font-size: 8.8em;
+		color: #ffffff;
+	}
+}
+.perceng {
+	position: absolute;
+	top: 34.4em;
+	left: 120.5em;
+
+	span {
+		font-weight: 700;
+		font-size: 18.4em;
+		color: #ffffff;
+	}
+	sup {
+		font-weight: 700;
+		font-size: 8.8em;
+		color: #ffffff;
+	}
+}

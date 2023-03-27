@@ -1,0 +1,186 @@
+section {
+	opacity: 0;
+}
+.prev {
+	display: none;
+}
+.next {
+	display: none;
+}
+.mainSlide {
+	height: 100%;
+}
+.slide-22 {
+	overflow: visible;
+	padding: 17.6em 10em 3em 15em;
+}
+
+.text-lg {
+	position: relative;
+	border-width: 2.3em;
+	margin-bottom: 13.2em;
+	b {
+		font-size: 10.3em;
+	}
+}
+.grey-bg {
+	position: absolute;
+	top: 16.4em;
+	left: 83.6em;
+	width: 100vw;
+	height: 100%;
+	background: #e1e1e6;
+}
+.red-bg {
+	position: absolute;
+	top: 40.6em;
+	right: 13.9em;
+	width: 100vw;
+	height: 50.9em;
+
+	background: #c00000;
+}
+.content {
+	position: relative;
+	display: flex;
+
+	&__title {
+		text-align: center;
+		span {
+			font-weight: 700;
+			font-size: 3.9em;
+			color: #ffffff;
+		}
+	}
+
+	&__row {
+		display: flex;
+		align-items: center;
+	}
+}
+.content-day {
+	position: relative;
+	margin-left: -7.1em;
+	padding-right: 7.1em;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 0;
+		width: 0.6em;
+		height: 39.4em;
+		background: #fff;
+	}
+}
+.content-night {
+	padding-left: 5.3em;
+}
+.pack {
+	&--1 {
+		width: 14em;
+		margin: -2em 0 0;
+	}
+
+	&--2 {
+		width: 21.1em;
+		margin: 5em 0 0 0;
+	}
+
+	&--3 {
+		width: 21.1em;
+		margin: 4.6em 0 0 1em;
+	}
+	&--4 {
+		width: 17.7em;
+		margin: -3.6em 0 0;
+	}
+}
+.plus {
+	width: 10.2em;
+	margin: 0 0.1em 1.2em 1.3em;
+}
+
+.content-item {
+	position: relative;
+	height: 40.2em;
+	z-index: 2;
+	&__circle {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		margin-left: -6.8em;
+		margin-top: -6.8em;
+		width: 13.6em;
+		height: 13.6em;
+		background: #fff;
+		border-radius: 50%;
+
+		&::before {
+			content: '+';
+			position: absolute;
+			color: #e1e1e6;
+			font-weight: 700;
+			font-size: 12em;
+			line-height: 0;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, 50%);
+		}
+
+		.hand {
+			left: 80%;
+			top: 80%;
+		}
+	}
+
+	&__title {
+		position: absolute;
+		left: 0;
+		top: 32em;
+		width: 100%;
+		text-align: center;
+		opacity: 0;
+		transform: translateY(2em);
+		span {
+			font-weight: 700;
+			font-size: 1.7em;
+			color: #ffffff;
+		}
+	}
+
+	img {
+		opacity: 0;
+		pointer-events: none;
+	}
+
+	& + .plus {
+		opacity: 0;
+		transform: scale(0);
+	}
+
+	&.active {
+		.hand {
+			opacity: 0;
+		}
+		.content-item__circle {
+			transform: scale(0);
+			transition: all 0.6s;
+		}
+		.content-item__title {
+			opacity: 1;
+			transform: translateX(0);
+			transition: all 0.3s 0.5s;
+		}
+		img {
+			transition: all 0.3s 0.5s;
+			opacity: 1;
+		}
+		& + .plus {
+			transition: all 0.5s 0.8s;
+			opacity: 1;
+			transform: scale(1);
+		}
+	}
+}
