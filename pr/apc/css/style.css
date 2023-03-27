@@ -632,8 +632,6 @@ html {
 	font-size: 18px;
 }
 
-@media screen and (max-width: 790px) and (min-width: 320px) and (orientation: portrait) {}
-
 @keyframes animationFrames {
 	0% {
 		-webkit-transform: rotate(0deg) scaleX(1.00) scaleY(1.00);

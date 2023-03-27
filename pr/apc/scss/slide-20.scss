@@ -18,7 +18,7 @@ section {
 	width: 152.1em;
 	height: 65.6em;
 	position: relative;
-	padding: 78px 0 0 82px;
+	padding: 7.8em 0 0 8.2em;
 	&::before {
 		content: '';
 		position: absolute;
@@ -107,8 +107,8 @@ section {
 	position: absolute;
 	top: 21.9em;
 	left: 128.8em;
-	width: 630px;
-	height: 321px;
+	width: 63em;
+	height: 32.1em;
 
 	padding: 5.4em 5em 0;
 
@@ -139,7 +139,7 @@ section {
 	width: 56.8em;
 }
 .list__img {
-	perspective: 10000px;
+	perspective: 1000em;
 	transform-style: preserve-3d;
 	transform-origin: center;
 }
