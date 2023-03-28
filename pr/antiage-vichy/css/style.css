@@ -212,9 +212,12 @@ html {
 	font-size: clamp(1px, 0.925925vh, 0.520833vw);
 }
 
-.mobile #pinContainer{
-	font-size: clamp(1px, 0.7407407vh, 0.417vw);
+@media screen and (max-width: 1024px) {
+	#pinContainer{
+		font-size: clamp(1px, 0.7407407vh, 0.417vw);
+	}
 }
+
 
 #slideContainer {
 	width: 100%;
@@ -270,55 +273,58 @@ html {
 		cursor: pointer;
 	}
 }
-.mobile .next {
-	width: 20em;
-	height: 20em;
-	bottom: 0;
-	right: 0;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-}
-.mobile .next svg {
-	width: 9em;
-	height: 9em;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-}
-.mobile .prev {
-	width: 20em;
-	height: 20em;
-	bottom: 0;
-	left: 0;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-}
-.mobile .prev svg {
-	width: 9em;
-	height: 9em;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
+
+@media screen and (max-width: 1024px) {
+	.next {
+		width: 20em;
+		height: 20em;
+		bottom: 0;
+		right: 0;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+	.next svg {
+		width: 9em;
+		height: 9em;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+	}
+	.prev {
+		width: 20em;
+		height: 20em;
+		bottom: 0;
+		left: 0;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+	.prev svg {
+		width: 9em;
+		height: 9em;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+	}
 }
 /*main style*/
 .slide {

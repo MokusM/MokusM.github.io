@@ -1,29 +1,4 @@
-const mobileCheck = () => {
-	const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-
-	if (/android/i.test(userAgent)) {
-		document.documentElement.classList.add('mobile');
-		return 'Android';
-	}
-
-	if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-		document.documentElement.classList.add('mobile');
-		return 'iOS';
-	}
-
-	return 'unknown';
-};
-
 $(document).ready(function () {
-	mobileCheck();
-	viewport = $('meta[name=viewport]');
-	if ($(window).width() < 900) {
-		viewport.attr('content', 'width=device-width, initial-scale=0.5, maximum-scale=0.5, user-scalable=no');
-	}
-	if ($(window).width() < 1100) {
-		viewport.attr('content', 'width=device-width, initial-scale=0.7, maximum-scale=0.7, user-scalable=no');
-	}
-
 	var mob = 0;
 	function gup(name, url) {
 		if (!url) url = location.href;
