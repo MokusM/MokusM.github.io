@@ -1,0 +1,163 @@
+<div class="logo-top logo"></div>
+<div class="logo-bottom logo"></div>
+<section class="panel autoload" data-count="2" data-next="slide3">
+	<div class="containerBlock">
+		<div class="slide slide-2">
+			<img class="vichy-logo" src="images/vichy.png" alt="" />
+			<div class="content">
+				<div class="content__img">
+					<div class="pacient">
+						<div class="pacient__img">
+							<img src="images/women-1.jpg" alt="" />
+						</div>
+						<div class="pacient__name"><span>ДАРИНА </span></div>
+						<div class="pacient__age"><span>(45 РОКІВ) </span></div>
+						<ul class="pacient-list">
+							<li class="pacient-list__item"><span>чутлива шкіра </span></li>
+							<li class="pacient-list__item"><span>глибокиі зморшки, втрата пружності та еластичності </span></li>
+							<li class="pacient-list__item"><span>ярко виражені пігментні плями </span></li>
+						</ul>
+					</div>
+				</div>
+				<div class="content__product">
+					<div id="content">
+						<div class="slots" id="cardSlots">
+							<div class="slots__item" data-number="1">
+								<img src="images/prod1.png" class="prod1" alt="" />
+							</div>
+							<div class="slots__item" data-number="2">
+								<img src="images/prod2.png" class="prod2" alt="" />
+							</div>
+							<div class="slots__item" data-number="3">
+								<div class="plus">+</div>
+								<img src="images/prod3.png" class="prod3" alt="" />
+								<img src="images/prod4.png" class="prod4" alt="" />
+								<img src="images/prod5.png" class="prod5" alt="" />
+							</div>
+							<div class="slots__item" data-number="4">
+								<div class="plus">+</div>
+								<img src="images/prod8.png" class="prod8" alt="" />
+								<img src="images/prod9.png" class="prod9" alt="" />
+								<img src="images/prod10.png" class="prod10" alt="" />
+							</div>
+						</div>
+						<div class="list" id="cardPile">
+							<div class="list__item" data-number="1" data-prod="1">
+								<img src="images/prod1.png" alt="" />
+							</div>
+							<div class="list__item" data-number="2" data-prod="2">
+								<img src="images/prod2.png" alt="" />
+							</div>
+							<div class="list__item" data-number="3" data-prod="3">
+								<img src="images/prod3.png" alt="" />
+							</div>
+							<div class="list__item" data-number="3" data-prod="4">
+								<img src="images/prod4.png" alt="" />
+							</div>
+							<div class="list__item" data-number="5" data-prod="5">
+								<img src="images/prod5.png" alt="" />
+							</div>
+							<div class="list__item" data-number="5" data-prod="6">
+								<img src="images/prod6.png" alt="" />
+							</div>
+							<div class="list__item" data-number="5" data-prod="7">
+								<img src="images/prod7.png" alt="" />
+							</div>
+							<div class="list__item" data-number="4" data-prod="8">
+								<img src="images/prod8.png" alt="" />
+							</div>
+							<div class="list__item" data-number="4" data-prod="9">
+								<img src="images/prod9.png" alt="" />
+							</div>
+							<div class="list__item" data-number="4" data-prod="10">
+								<img src="images/prod10.png" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="help-inf">Обери продукт і занеси у відповідну категорію догляду</div>
+		</div>
+	</div>
+</section>
+<style></style>
+<script>
+	TweenMax.to('section', 0.5, { opacity: 1, ease: Linear.easeNone });
+	var tl = new TimelineMax({ paused: true, onComplete: () => show_arrow_next_slide() });
+	tl.play();
+
+	var prodItems = document.querySelectorAll('.list__item');
+	var prodSlots = document.querySelectorAll('.slots__item');
+
+	prodItems.forEach((prodItem, index) => {
+		$(prodItem).draggable({
+			containment: '#content',
+			stack: '#cardPile div',
+			cursor: 'move',
+			revert: true,
+		});
+	});
+	prodSlots.forEach((prodItem, index) => {
+		$(prodItem).droppable({
+			accept: '#cardPile div',
+			hoverClass: 'hovered',
+			drop: handleCardDrop,
+		});
+	});
+
+	var correctCards = 0;
+	var сountCard = [1, 1, 2, 3];
+
+	function handleCardDrop(event, ui) {
+		var slotNumber = $(this).data('number');
+		var сountAnswer = $(this).data('answer');
+		var cardNumber = ui.draggable.data('number');
+		var prod = ui.draggable.data('prod');
+
+		// If the card was dropped to the correct slot,
+		// change the card colour, position it directly
+		// on top of the slot, and prevent it being dragged
+		// again
+
+		if (slotNumber == cardNumber) {
+			сountCard[slotNumber - 1]--;
+			ui.draggable.addClass('correct');
+			ui.draggable.draggable('disable');
+			$('.slots__item:nth-child(' + slotNumber + ')').addClass('prod' + prod);
+
+			if (сountCard[slotNumber - 1] === 0) {
+				$('.slots__item:nth-child(' + slotNumber + ')')
+					.removeClass('half-active')
+					.addClass('active');
+			} else {
+				$('.slots__item:nth-child(' + slotNumber + ')').addClass('half-active');
+			}
+
+			ui.draggable.position({ of: $(this), my: 'center top', at: 'center top' });
+			ui.draggable.draggable('option', 'revert', false);
+			correctCards++;
+			show_arrow_next_slide();
+		}
+
+		// If all the cards have been placed correctly then display a message
+		// and reset the cards for another go
+
+		// if (correctCards == 10) {
+		// 	$('#successMessage').show();
+		// 	$('#successMessage').animate({
+		// 		left: '380px',
+		// 		top: '200px',
+		// 		width: '400px',
+		// 		height: '100px',
+		// 		opacity: 1,
+		// 	});
+		// }
+	}
+	function show_arrow_next_slide() {
+		if (correctCards == 4) {
+			setTimeout(function () {
+				$('.next').show('slow');
+			}, 2000);
+		}
+	}
+</script>
