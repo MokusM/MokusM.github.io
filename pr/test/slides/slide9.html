@@ -1,6 +1,6 @@
 <div class="logo-top logo"></div>
 <div class="logo-bottom logo"></div>
-<section class="panel autoload" data-count="9" data-next="slide9" data-prev="slide8">
+<section class="panel autoload" data-count="9" data-next="slide10" data-prev="slide8">
 	<div class="containerBlock">
 		<div class="slide slide-9">
 			<img class="vichy-logo" src="images/vichy.png" alt="" />
@@ -239,6 +239,7 @@
 	function show_arrow_next_slide() {
 		if (correctCards == 9) {
 			setTimeout(function () {
+				$('.prev').show('slow');
 				$('.next').show('slow');
 			}, 2000);
 		}

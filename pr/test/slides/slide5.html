@@ -213,24 +213,11 @@
 			correctCards++;
 			show_arrow_next_slide();
 		}
-
-		// If all the cards have been placed correctly then display a message
-		// and reset the cards for another go
-
-		// if (correctCards == 10) {
-		// 	$('#successMessage').show();
-		// 	$('#successMessage').animate({
-		// 		left: '380px',
-		// 		top: '200px',
-		// 		width: '400px',
-		// 		height: '100px',
-		// 		opacity: 1,
-		// 	});
-		// }
 	}
 	function show_arrow_next_slide() {
 		if (correctCards == 7) {
 			setTimeout(function () {
+				$('.prev').show('slow');
 				$('.next').show('slow');
 			}, 2000);
 		}
