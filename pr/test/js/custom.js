@@ -28,7 +28,7 @@ $(document).ready(function () {
 		return results == null ? null : results[1];
 	}
 
-	var currenSlide = 11;
+	var currenSlide = 1;
 
 	var url = 'slides/slide' + currenSlide + '.html';
 	if (gup('slide')) {
