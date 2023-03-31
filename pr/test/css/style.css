@@ -212,9 +212,13 @@ html {
 	font-size: clamp(1px, 0.925925vh, 0.520833vw);
 }
 
-.mobile #pinContainer{
-	font-size: clamp(1px, 0.7407407vh, 0.417vw);
+@media screen and (max-width: 1024px) {
+	#pinContainer{
+		font-size: clamp(1px, 0.7407407vh, 0.417vw);
+	}
 }
+
+
 
 #slideContainer {
 	width: 100%;
@@ -350,14 +354,14 @@ html {
 }
 
 .help-inf {
-	position: absolute;
-	bottom: 3vh;
-	left: 25%;
 	text-align: center;
-	width: 50%;
-	font-size: 3em;
-	line-height: 1;
+	width: 100%;
+	margin-top: 3em;
 	color: #767171;
+}
+
+.help-inf span {
+	font-size: 3em;
 }
 
 
