@@ -231,10 +231,10 @@ section {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-end;
-	align-items: flex-end;
+	align-items: center;
 	flex-direction: column;
-	height: 25.3em;
-	padding: 2em;
+	height: 25.5em;
+	padding: 2em 0.5em;
 	position: relative;
 	&::before {
 		content: '';
@@ -285,6 +285,71 @@ section {
 		justify-content: center;
 		padding: 0.2em;
 
+		&--1 {
+			width: 6.9em;
+		}
+
+		&--2 {
+			width: 6.2em;
+		}
+
+		&--3 {
+			width: 4.4em;
+		}
+
+		&--4 {
+			width: 5.95em;
+		}
+		&--5 {
+			width: 5.45em;
+		}
+		&--6 {
+			width: 5.56em;
+		}
+		&--7 {
+			width: 6.4em;
+		}
+		&--8 {
+			width: 5.55em;
+		}
+		&--9 {
+			width: 5.25em;
+		}
+		&--10 {
+			width: 5.4em;
+		}
+		&--11 {
+			width: 4.4em;
+		}
+		&--13 {
+			width: 7.4em;
+		}
+		&--15 {
+			width: 7.4em;
+		}
+		&--16 {
+			width: 7.4em;
+		}
+		&--17 {
+			width: 7.4em;
+		}
+
+		&--18 {
+			width: 4em;
+		}
+		&--19 {
+			width: 4.1em;
+		}
+		&--20 {
+			width: 4em;
+		}
+		&--21 {
+			width: 7.4em;
+		}
+		&--22 {
+			width: 7.4em;
+		}
+
 		img {
 			max-height: 100%;
 		}
@@ -317,72 +382,19 @@ section {
 		}
 	}
 }
-@keyframes bounce-top {
-	0% {
-		transform: translateY(-2em);
-		animation-timing-function: ease-in;
-		opacity: 1;
-	}
-	24% {
-		opacity: 1;
-	}
-	40% {
-		transform: translateY(-1.2em);
-		animation-timing-function: ease-in;
-	}
-	65% {
-		transform: translateY(-0.87em);
-		animation-timing-function: ease-in;
-	}
-	82% {
-		transform: translateY(-0.5em);
-		animation-timing-function: ease-in;
-	}
-	93% {
-		transform: translateY(-0.3em);
-		animation-timing-function: ease-in;
-	}
-	25%,
-	55%,
-	75%,
-	87% {
-		transform: translateY(0px);
-		animation-timing-function: ease-out;
-	}
-	100% {
-		transform: translateY(0px);
-		animation-timing-function: ease-out;
-		opacity: 1;
-	}
-}
 
 .arrow-list {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 2em;
-	margin-top: 2em;
+	margin-bottom: 0em;
+	margin-top: 4em;
 	&__item {
 		width: 27em;
-
-		&.active {
-			// animation: bounce-top 2.8s infinite both;
-		}
 
 		img {
 			width: 10.9em;
 			margin: 0 auto;
 			display: block;
-		}
-		&--1 {
-		}
-
-		&--2 {
-		}
-
-		&--3 {
-		}
-
-		&--4 {
 		}
 	}
 }
